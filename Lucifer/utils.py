@@ -1,11 +1,11 @@
 import sys
 import math
-from Lion import bot
+from Lucifer import bot
 from telethon import events
 from pathlib import Path
-from Lion.LionConfig import Var, Config
-from Lion import LOAD_PLUG
-from Lion import CMD_LIST
+from Lucifer.LuciferConfig import Var, Config
+from Lucifer import LOAD_PLUG
+from Lucifer import CMD_LIST
 import re
 import logging
 import inspect
@@ -90,10 +90,10 @@ def load_module(shortname):
     if shortname.startswith("__"):
         pass
     elif shortname.endswith("_"):
-        import Lion.utils
+        import Lucifer.utils
         import importlib
-        path = Path(f"Lion/plugins/{shortname}.py")
-        name = "Lion.plugins.{}".format(shortname)
+        path = Path(f"Lucifer/plugins/{shortname}.py")
+        name = "Lucifer.plugins.{}".format(shortname)
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(mod)
@@ -101,8 +101,8 @@ def load_module(shortname):
     else:
         import Lion.utils
         import importlib
-        path = Path(f"Lion/plugins/{shortname}.py")
-        name = "Lion.plugins.{}".format(shortname)
+        path = Path(f"Lucifer/plugins/{shortname}.py")
+        name = "Lucifer.plugins.{}".format(shortname)
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         mod.bot = bot
@@ -111,7 +111,7 @@ def load_module(shortname):
         mod.command = command
         mod.logger = logging.getLogger(shortname)
         # support for uniborg
-        sys.modules["uniborg.util"] = Lion.utils
+        sys.modules["uniborg.util"] = Lucifer.utils
         mod.Config = Config
         mod.borg = bot
         mod.Lion = bot
@@ -124,11 +124,11 @@ def load_module(shortname):
         sys.modules["Lion.events"] = Lion.utils
         spec.loader.exec_module(mod)
         # for imports
-        sys.modules["Lion.plugins." + shortname] = mod
+        sys.modules["Lucifer.plugins." + shortname] = mod
         print("Pʟᴜɢɪɴ ʟᴏᴀᴅᴇᴅ ネ Pʟᴜɢɪɴ ɴᴀᴍᴇ " + shortname)
         # support for other third-party plugins
-        sys.modules["userbot.utils"] = Lion.utils
-        sys.modules["userbot"] = Lion
+        sys.modules["userbot.utils"] = Lucifer.utils
+        sys.modules["userbot"] = Lucifer
 
 
 def remove_plugin(shortname):
@@ -139,7 +139,7 @@ def remove_plugin(shortname):
             del LOAD_PLUG[shortname]
 
         except BaseException:
-            name = f"Lion.plugins.{shortname}"
+            name = f"Lucifer.plugins.{shortname}"
 
             for i in reversed(range(len(bot._event_builders))):
                 ev, cb = bot._event_builders[i]
@@ -396,25 +396,25 @@ def start_mybot(shortname):
         import sys
         from pathlib import Path
 
-        path = Path(f"Lion/plugins/mybot/{shortname}.py")
-        name = "Lion.plugins.mybot.{}".format(shortname)
+        path = Path(f"Lucifer/plugins/mybot/{shortname}.py")
+        name = "Lucifer.plugins.mybot.{}".format(shortname)
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(mod)
         print("𝙸𝙼𝙿𝙾𝚁𝚃𝙸𝙽𝙶 𝙼𝙾𝙳𝚄𝙻𝙴𝚂 𝙿𝙻𝙴𝙰𝚂𝙴 𝚆𝙰𝙸𝚃.")
-        print("𝙻𝙸𝙾𝙽 - 𝙸𝙼𝙿𝙾𝚁𝚃𝙴𝙳 " + shortname)
+        print("Lucifer - 𝙸𝙼𝙿𝙾𝚁𝚃𝙴𝙳 " + shortname)
     else:
         import importlib
         import sys
         from pathlib import Path
 
-        path = Path(f"Lion/plugins/mybot/{shortname}.py")
-        name = "Lion.plugins.mybot.{}".format(shortname)
+        path = Path(f"Lucifer/plugins/mybot/{shortname}.py")
+        name = "Lucifer.plugins.mybot.{}".format(shortname)
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         mod.tgbot = bot.tgbot
         spec.loader.exec_module(mod)
-        sys.modules["Lion.plugins.mybot" + shortname] = mod
+        sys.modules["Lucifer.plugins.mybot" + shortname] = mod
         print("𝚃𝙶 𝙱𝙾𝚃 𝙷𝙰𝚂 𝙸𝙼𝙿𝙾𝚁𝚃𝙴𝙳 " + shortname)
 
 
@@ -426,8 +426,8 @@ def load_pmbot(shortname):
         import sys
         from pathlib import Path
 
-        path = Path(f"Lion/plugins/mybot/pmbot/{shortname}.py")
-        name = "Lion.plugins.mybot.pmbot.{}".format(shortname)
+        path = Path(f"Lucifer/plugins/mybot/pmbot/{shortname}.py")
+        name = "Lucifer.plugins.mybot.pmbot.{}".format(shortname)
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(mod)
@@ -438,11 +438,11 @@ def load_pmbot(shortname):
         import sys
         from pathlib import Path
 
-        path = Path(f"Lion/plugins/mybot/pmbot/{shortname}.py")
-        name = "Lion.plugins.mybot.pmbot.{}".format(shortname)
+        path = Path(f"Lucifer/plugins/mybot/pmbot/{shortname}.py")
+        name = "Lucifer.plugins.mybot.pmbot.{}".format(shortname)
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         mod.tgbot = bot.tgbot
         spec.loader.exec_module(mod)
-        sys.modules["Lion.plugins.mybot.pmbot." + shortname] = mod
+        sys.modules["Lucifer.plugins.mybot.pmbot." + shortname] = mod
         print("𝙿𝙼 𝙱𝙾𝚃 𝙷𝙰𝚂 𝙸𝙼𝙿𝙾𝚁𝚃𝙴𝙳 " + shortname)
