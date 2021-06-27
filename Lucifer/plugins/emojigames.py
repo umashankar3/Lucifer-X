@@ -3,11 +3,11 @@
 
 from telethon.tl.types import InputMediaDice
 
-from Lion import CMD_HELP
-from Lion.utils import admin_cmd
+from Lucifer import CMD_HELP
+from Lucifer.utils import admin_cmd
 
 
-@Lion.on(admin_cmd(outgoing=True, pattern="dice(?: |$)(.*)"))
+@Lucifer.on(admin_cmd(outgoing=True, pattern="dice(?: |$)(.*)"))
 async def _(event):
     if event.fwd_from:
         return
@@ -24,7 +24,7 @@ async def _(event):
             pass
 
 
-@Lion.on(admin_cmd(outgoing=True, pattern="dart(?: |$)(.*)"))
+@Lucifer.on(admin_cmd(outgoing=True, pattern="dart(?: |$)(.*)"))
 async def _(event):
     if event.fwd_from:
         return
@@ -41,7 +41,7 @@ async def _(event):
             pass
 
 
-@Lion.on(admin_cmd(outgoing=True, pattern="bb(?: |$)(.*)"))
+@Lucifer.on(admin_cmd(outgoing=True, pattern="bb(?: |$)(.*)"))
 async def _(event):
     if event.fwd_from:
         return
