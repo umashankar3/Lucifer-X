@@ -7,7 +7,7 @@ import os
 import sys
 from telethon.sessions import StringSession
 from telethon import TelegramClient
-from Lion.LionConfig import Var
+from Lucifer.LionConfig import Var
 import time
 
 if Var.STRING_SESSION:
