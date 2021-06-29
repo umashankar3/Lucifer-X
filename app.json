@@ -1,5 +1,5 @@
 {
- "name": "Lion 🇮🇳 UserBot",
+ "name": "Lucifer 🇮🇳 UserBot",
  "description": "An advanced Telethon Userbot, from @LionXSupport",
  "logo": "https://user-images.githubusercontent.com/78837537/120152150-c37ad280-c20a-11eb-92ce-64b9124b05ed.jpg",
  "keywords": [
@@ -9,7 +9,7 @@
   "modular",
   "productivity"
  ],
- "repository": "https://github.com/Mdnoor786/Lion-X",
+ "repository": "https://github.com/kaal0408/Lucifer-X",
  "website": "https://MdNoor786.gitbook.io/Lion/",
  "success_url": "https://t.me/LionXsupport",
  "stack": "container",
@@ -20,7 +20,7 @@
   },
   "TEMP_DOWNLOAD_DIRECTORY": {
    "description": "Where downloaded files will go.",
-   "value": "./Lion/DOWNLOADS/",
+   "value": "./Lucifer/DOWNLOADS/",
    "required": false
   },
   "APP_ID": {
