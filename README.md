@@ -1,2 +1,2 @@
-# Lion-X
+# Lucifer-X
 > Telethon based userbot (•~•)
