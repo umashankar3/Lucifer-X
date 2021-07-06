@@ -11,7 +11,7 @@
  ],
  "repository": "https://github.com/kaal0408/Lucifer-X",
  "website": "https://MdNoor786.gitbook.io/Lion/",
- "success_url": "https://t.me/LionXsupport",
+ "success_url": "https://t.me/LuciferXsupport",
  "stack": "container",
  "env": {
   "ENV": {
@@ -66,7 +66,7 @@
    "required": false
   },  
   "GIT_REPO_NAME": {
-   "description": "Your repo name Example: MdNoor786/Lion, but GITHUB_ACCESS_TOKEN must be setup first.",
+   "description": "Your repo name Example: kaal0408/Lucifer, but GITHUB_ACCESS_TOKEN must be setup first.",
    "value": "",
    "required": false
   },
