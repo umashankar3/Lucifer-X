@@ -114,14 +114,14 @@ def load_module(shortname):
         sys.modules["uniborg.util"] = Lucifer.utils
         mod.Config = Config
         mod.borg = bot
-        mod.Lion = bot
+        mod.Lucifer = bot
         # auto-load
         mod.admin_cmd = admin_cmd
         mod.sudo_cmd = sudo_cmd
         mod.edit_or_reply = edit_or_reply
         mod.eor = eor
         # support for paperplaneextended
-        sys.modules["Lion.events"] = Lion.utils
+        sys.modules["Lucifer.events"] = Lucifer.utils
         spec.loader.exec_module(mod)
         # for imports
         sys.modules["Lucifer.plugins." + shortname] = mod
