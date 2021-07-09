@@ -24,7 +24,7 @@ API_HASH = input("𝙴𝙽𝚃𝙴𝚁 𝚈𝙾𝚄𝚁 𝙰𝙿𝙸 𝙷𝙰�
 with TelegramClient(StringSession(), APP_ID, API_HASH) as client:
     tele = client.send_message("me", client.session.save())
     tele.reply(
-        "✘ Hᴇʀᴇ ɪs ʏᴏᴜʀ `STRING_SESSION` Oғ ʟɪᴏɴ ᴜsᴇʀʙᴏᴛ ✘.\n@Dark_ultra_support_group")
+        "✘ Hᴇʀᴇ ɪs ʏᴏᴜʀ `STRING_SESSION` Oғ ʟɪᴏɴ ᴜsᴇʀʙᴏᴛ ✘.\n@LuciferXsupport")
     print("")
     print("Bᴇʟᴏᴡ ɪs ʏᴏᴜʀ STRING_SESSION. Wᴇ ʜᴀᴠᴇ ᴀʟsᴏ sᴛᴏʀᴇᴅ ɪɴ ᴛᴇʟᴇɢʀᴀᴍ sᴀᴠᴇ ᴍᴇssᴀɢᴇs")
     print("")
