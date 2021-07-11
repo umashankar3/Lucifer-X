@@ -1,4 +1,4 @@
-# Lion
+# Lucifer
 
 # Copyright (C) 2020 Adek Maulana.
 # All rights reserved.
