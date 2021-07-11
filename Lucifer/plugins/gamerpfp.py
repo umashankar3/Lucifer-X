@@ -54,7 +54,7 @@ async def animepp():
     urllib.request.urlretrieve(fy, "donottouch.jpg")
 
 
-@Lion.on(admin_cmd(pattern="gamerpfp ?(.*)"))
+@Lucifer.on(admin_cmd(pattern="gamerpfp ?(.*)"))
 async def main(event):
 
     # Owner @NihiNivi
