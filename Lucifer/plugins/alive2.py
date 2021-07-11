@@ -6,7 +6,7 @@ from userbot.utils import admin_cmd, sudo_cmd
 
 from Lucifer import ALIVE_NAME, StartTime, luciferver
 from Lucifer.helper import functions as dcdef 
-from Lucifer.LionConfig import Config, Var
+from Lucifer.LuciferConfig import Config, Var
 
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "ℓυcιғεя x υsεя"
 
@@ -15,7 +15,7 @@ DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "ℓυcιғεя x υsεя"
 # Made by @hellboi_atul ....and thanks to @Crackexy for the logos...
 # Kang with credits else gay...
 # alive.py for DC(DARK COBRA)
-# modded for Lion X Userbot
+# modded for Lucifer X Userbot
 global fuk
 fuk = borg.uid
 edit_time = 5
@@ -47,15 +47,15 @@ async def hmm(yes):
     pm_caption = f"{luciferemoji}**{CUSTOM_ALIVE}**\n\n"
     pm_caption += f"{luciferemoji}**Mʏ sʏsᴛᴇᴍ ɪs ᴘᴇʀғᴇᴄᴛʟʏ ʀᴜɴɴɪɢ**\n\n"
     pm_caption += f"{luciferemoji} Aʙᴏᴜᴛ ᴍʏ sʏsᴛᴇᴍ ✗\n\n"
-    pm_caption += f"{luciferemoji} **L U C I F E R 𝙓 𝙑𝙀𝙍𝙎𝙄𝙊𝙉**: `{lionver}`\n"
+    pm_caption += f"{luciferemoji} **L U C I F E R 𝙓 𝙑𝙀𝙍𝙎𝙄𝙊𝙉**: `{luciferver}`\n"
     pm_caption += f"{luciferemoji} **𝙏𝙀𝙇𝙀𝙏𝙃𝙊𝙉 𝙑𝙀𝙍𝙎𝙄𝙊𝙉** ☞ {version.__version__}\n"
     pm_caption += f"{luciferemoji} **𝙎𝙐𝙋𝙋𝙊𝙍𝙏 𝘾𝙃𝘼𝙉𝙉𝙀𝙇** ☞ [ᴊᴏɪɴ](https://t.me/LuciferXupdates)\n"
     pm_caption += f"{luciferemoji} **𝙇𝙄𝘾𝙀𝙉𝙎𝙀**  ☞ [𝚃𝙴𝙰𝙼 L U C I F E R 𝚄𝙱](https://github.com/kaal0408)\n"
     pm_caption += (
         f"{luciferemoji} **𝘾𝙊𝙋𝙔𝙍𝙄𝙂𝙃𝙏 𝘽𝙔** ☞ [L U C I F E R𝚄𝙱](https://github.com/kaal0408/Lucifer-X)\n\n"
     )
-    pm_caption += f"{lionemoji} **L U C I F E R 𝙐𝙋𝙏𝙄𝙈𝙀** ☞ {uptime}\n\n"
-    pm_caption += f"{lionemoji} **𝙈𝙔 𝙋𝙀𝙍𝙊 𝙈𝘼𝙎𝙏𝙀𝙍** ☞ [{DEFAULTUSER}](tg://user?id={fuk})\n"
+    pm_caption += f"{luciferemoji} **L U C I F E R 𝙐𝙋𝙏𝙄𝙈𝙀** ☞ {uptime}\n\n"
+    pm_caption += f"{luciferemoji} **𝙈𝙔 𝙋𝙀𝙍𝙊 𝙈𝘼𝙎𝙏𝙀𝙍** ☞ [{DEFAULTUSER}](tg://user?id={fuk})\n"
     on = await borg.send_file(
         yes.chat_id, file=ALV_PIC, caption=pm_caption, link_preview=False
     )
