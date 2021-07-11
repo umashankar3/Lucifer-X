@@ -18,13 +18,13 @@ import asyncio
 
 from telethon.errors.rpcerrorlist import YouBlockedUserError
 
-from Lion import CMD_HELP
+from Lucifer import CMD_HELP
 
 bot = "@MissRose_bot"
 
 
-@Lion.on(admin_cmd(pattern="fstat ?(.*)"))
-@Lion.on(sudo_cmd(pattern="fstat ?(.*)", allow_sudo=True))
+@Lucifer.on(admin_cmd(pattern="fstat ?(.*)"))
+@Lucifer.on(sudo_cmd(pattern="fstat ?(.*)", allow_sudo=True))
 async def _(event):
     if event.fwd_from:
         return
@@ -52,7 +52,7 @@ async def _(event):
                     await audio.click(0)
                     await asyncio.sleep(2)
                     audio = await conv.get_response()
-                    await Lion.send_file(
+                    await Lucifer.send_file(
                         event.chat_id,
                         audio,
                         caption=f"List of feds {user} has been banned in.\n\nCollected using Lucifer.",
@@ -64,8 +64,8 @@ async def _(event):
                 await ok.edit("**Error**\n `Unblock` @MissRose_Bot `and try again!")
 
 
-@Lion.on(admin_cmd(pattern="fedinfo ?(.*)"))
-@Lion.on(sudo_cmd(pattern="fedinfo ?(.*)", allow_sudo=True))
+@Lucifer.on(admin_cmd(pattern="fedinfo ?(.*)"))
+@Lucifer.on(sudo_cmd(pattern="fedinfo ?(.*)", allow_sudo=True))
 async def _(event):
     if event.fwd_from:
         return
