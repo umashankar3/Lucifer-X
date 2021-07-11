@@ -5,8 +5,8 @@ import asyncio
 from telethon.tl.types import InputMediaUploadedPhoto
 from uniborg.util import admin_cmd
 
-from Lion import CMD_HELP
-from Lion.plugins.sql_helper.ghdb_sql import (
+from Lucifer import CMD_HELP
+from Lucifer.plugins.sql_helper.ghdb_sql import (
     add_channel,
     get_all_channels,
     in_channels,
