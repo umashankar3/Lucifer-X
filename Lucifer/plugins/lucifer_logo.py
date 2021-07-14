@@ -59,7 +59,7 @@ async def lg1(Luciferevent):
     await bot.send_file(
         Luciferevent.chat_id,
         file_name,
-        caption=f"**Made By**: [LuciferUb](t.me/Dark_ultra_support_group)",
+        caption=f"**Made By**: [LuciferUb](t.me/LuciferXsupport)",
     )
     await event.delete()
     try:
