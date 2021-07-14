@@ -22,11 +22,11 @@ pm_caption += "► **Tᴇʟᴇᴛʜᴏɴ Vᴇʀsɪᴏɴ:** `1.21.1` \n"
 pm_caption += f"► **Lucifer X ᴀssɪᴛᴀɴᴛ ᴠᴇʀsɪᴏɴ** : `{currentversion}`\n"
 pm_caption += f"► **Mʏ ᴍᴀsᴛᴇʀ** : {DEFAULTUSER} \n"
 pm_caption += "► **Lucifer X ʟɪᴄᴇɴsᴇ** : [GNU General Public License v3.0](https://github.com/kaal0408/Lucifer-X/blob/master/LICENSE)\n"
-pm_caption += "► **Cᴏᴘʏʀɪɢʜᴛ** :[LɪᴏɴX](https://github.com/kaal0408/Lucifer-X)\n"
+pm_caption += "► **Cᴏᴘʏʀɪɢʜᴛ** :[LuciferX](https://github.com/kaal0408/Lucifer-X)\n"
 light = [[Button.url("✧ʀᴇᴘᴏsɪᴛᴏʀʏ✧",
                      "https://github.com/kaal0408/Lucifer-X"),
           Button.url("Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ",
-                     "https://t.me/LionXSupport")]]
+                     "https://t.me/LuciferXSupport")]]
 
 
 @tgbot.on(events.NewMessage(pattern="^/alive",
