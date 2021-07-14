@@ -87,7 +87,7 @@ async def start_all(event):
                                       [Button.url(
                                           "Lucifer", url="https://github.com/kaal0408/Lucifer-X")],
                                       [Button.inline(
-                                          "Whats this?", data="Lion")]
+                                          "Whats this?", data="Lucifer")]
                                   ]
                                   )
         else:
@@ -117,7 +117,7 @@ async def owner(event):
                                  [Button.inline("Bʀᴏᴀᴅᴄᴀsᴛ",
                                                 data="telebroad")],
                                  [Button.url("Lucifer Sᴜᴘᴘᴏʀᴛ",
-                                             url="https://t.me/LionXSupport")]
+                                             url="https://t.me/LuciferXSupport")]
                              ])
 
 
@@ -143,7 +143,7 @@ async def logs(event):
         caption="**Heroku** Lucifer Logs",
         buttons=[
             [Button.url("View Online", f"{url}")],
-            [Button.url("Crashed?", "t.me/LionXsupport")]
+            [Button.url("Crashed?", "t.me/LuciferXsupport")]
         ])
     await asyncio.sleep(5)
     return os.remove('logs.txt')
@@ -185,7 +185,7 @@ async def settings(event):
                          [(Button.url("Repository", url="https://github.com/kaal0408/Lucifer-X")),
                           (Button.url("Deploy", url="https://dashboard.heroku.com/new?template=https://github.com/kaal0408/Lucifer-X"))],
                          [Button.url("Support",
-                                     url="https://t.me/LionXSupport")]
+                                     url="https://t.me/LuciferXSupport")]
                      ])
 
 
@@ -484,7 +484,7 @@ async def alv_pic(event):
             return
         xx = await tgbot.send_message(event.chat_id, "Changing your Alive Pic, please wait for a minute")
         heroku_var=app.config()
-        heroku_var[Lion]=f"{url}"
+        heroku_var[Lucifer]=f"{url}"
         mssg=f"Successfully changed your alive pic. Please wait for a minute.\n"
         await xx.edit(mssg)
     else:
@@ -521,7 +521,7 @@ async def a_txt(event):
                 await conv.send_message("Cancelled!!")
             heroku_var=app.config()
             xx = await tgbot.send_message(event.chat_id, "Changing your PMSecurity Message, please wait for a minute")
-            heroku_var[Lion]=f"{themssg}"
+            heroku_var[Lucifer]=f"{themssg}"
             mssg=f"Changed your PMsecurity Message from\n`{old_alv}`\nto\n`{themssg}`\n"
             await xx.edit(mssg)
     else:
@@ -558,7 +558,7 @@ async def alv_pic(event):
             return
         xx = await tgbot.send_message(event.chat_id, "Changing your PMSecurity Pic, please wait for a minute")
         heroku_var=app.config()
-        heroku_var[Lion]=f"{url}"
+        heroku_var[Lucifer]=f"{url}"
         mssg=f"Successfully changed your PMSecurity pic. Please wait for a minute.\n"
         await xx.edit(mssg)
     else:
