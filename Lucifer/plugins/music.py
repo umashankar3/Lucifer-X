@@ -114,7 +114,7 @@ async def DeezLoader(Deezlod):
             conv.chat_id, [msg_start.id, response.id, r.id, msg.id, details.id, song.id]
         )
         await msg.edit(
-            f"Song name - __{d_link}__\nUploaded by [Lucifer](https://t.me/Dark_ultra_support_group)"
+            f"Song name - __{d_link}__\nUploaded by [Lucifer](https://t.me/LuciferXsupport)"
         )
         await Deezlod.delete()
 
