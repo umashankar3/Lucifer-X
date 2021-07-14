@@ -11,7 +11,7 @@ from telethon.tl.functions.users import GetFullUserRequest
 from telethon.tl.types import MessageEntityMentionName
 
 from Lucifer import CMD_HELP
-from Lucifer.LionConfig import Var
+from Lucifer.LuciferConfig import Var
 from Lucifer.utils import admin_cmd, register
 
 # ================= CONSTANT =================
