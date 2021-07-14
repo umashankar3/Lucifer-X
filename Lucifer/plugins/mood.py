@@ -1,11 +1,11 @@
-#  (c)2020 Lion
+#  (c)2020 Lucifer
 #
-# You may not use this plugin without proper authorship and consent from @LionSupport
+# You may not use this plugin without proper authorship and consent from @LuciferXsupport
 #
 from telethon.tl import functions
 
-from Lion import ALIVE_NAME, CMD_HELP
-from Lion.utils import admin_cmd
+from Lucifer import ALIVE_NAME, CMD_HELP
+from Lucifer.utils import admin_cmd
 
 TELENAME = ALIVE_NAME if ALIVE_NAME else "Lucifer"
 
