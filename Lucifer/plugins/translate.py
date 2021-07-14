@@ -28,7 +28,7 @@ async def _(event):
         lan, text = input_str.split("|")
     else:
         await x.edit(
-            f"`{CMD_HNDLR}tr LanguageCode` as reply to a message.\nLanguage codes can be found [here](https://t.me/LionHelpChat/22678)",
+            f"`{CMD_HNDLR}tr LanguageCode` as reply to a message.\nLanguage codes can be found [here](https://t.me/LuciferHelpChat/22678)",
         )
         return
     text = emoji.demojize(text.strip())
@@ -56,6 +56,6 @@ CMD_HELP.update(
         \nUse - Translate the replied text\
         \n\n.tr <LangaugeCode> | <text to translate>\
         \nUse - Translate the given text.\
-        \n\nLanguage codes can be found [here](https://t.me/LionHelpChat/22678)."
+        \n\nLanguage codes can be found [here](https://t.me/LuciferHelpChat/22678)."
     }
 )
