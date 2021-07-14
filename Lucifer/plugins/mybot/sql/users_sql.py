@@ -52,6 +52,6 @@ def get_user_id(message_id: int):
 
 def all_users():
     """get all bot users"""
-    lion = SESSION.query(Users).all()
+    lucifer = SESSION.query(Users).all()
     SESSION.close()
-    return lion
+    return lucifer
