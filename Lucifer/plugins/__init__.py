@@ -17,7 +17,7 @@
 from telethon.tl.types import Channel
 
 from Lucifer import *
-from Lucifer import ALIVE_NAME, bot, luciferver
+from Lucifer import ALIVE_NAME, bot, lucifer
 from Lucifer.LionConfig import Config, Var
 
 # stats
