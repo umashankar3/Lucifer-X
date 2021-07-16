@@ -48,14 +48,14 @@ else:
 
 LUCIFERUSER = str(ALIVE_NAME) if ALIVE_NAME else "@LuciferXsupport"
 
-Lucifer = f"L U C I F E R 𝚅𝙴𝚁𝚂𝙸𝙾𝙽: {Lucifer}\n"
-Lucifer += f"𝙻𝙾𝙶 𝙶𝚁𝙾𝚄𝙿: {log}\n"
-Lucifer += f"𝙼𝚈 𝙰𝚂𝚂𝙸𝚂𝚃𝙰𝙽𝚃 𝙱𝙾𝚃: {bots}\n"
-Lucifer += f"𝙻𝚈𝙳𝙸𝙰: {lyd}\n"
-Lucifer += f"𝚂𝚄𝙳𝙾 𝚄𝚂𝙴𝚁: {sudo}\n"
-Lucifer += f"𝙿𝙼 𝚂𝙴𝙲𝚄𝚁𝙸𝚃𝚈: {pm}\n"
-Lucifer += f"\n𝚅𝙸𝚂𝙸𝚃 @LuciferXsupport 𝙵𝙾𝚁 𝙰𝚂𝚂𝙸𝚂𝚃𝙰𝙽𝚃.\n"
-Luciferstats = f"{Lucifer}"
+lucifer = f"L U C I F E R 𝚅𝙴𝚁𝚂𝙸𝙾𝙽: {lucifer}\n"
+lucifer += f"𝙻𝙾𝙶 𝙶𝚁𝙾𝚄𝙿: {log}\n"
+lucifer += f"𝙼𝚈 𝙰𝚂𝚂𝙸𝚂𝚃𝙰𝙽𝚃 𝙱𝙾𝚃: {bots}\n"
+lucifer += f"𝙻𝚈𝙳𝙸𝙰: {lyd}\n"
+lucifer += f"𝚂𝚄𝙳𝙾 𝚄𝚂𝙴𝚁: {sudo}\n"
+lucifer += f"𝙿𝙼 𝚂𝙴𝙲𝚄𝚁𝙸𝚃𝚈: {pm}\n"
+lucifer += f"\n𝚅𝙸𝚂𝙸𝚃 @LuciferXsupport 𝙵𝙾𝚁 𝙰𝚂𝚂𝙸𝚂𝚃𝙰𝙽𝚃.\n"
+luciferstats = f"{lucifer}"
 
 LUCIFER_NAME = bot.me.first_name
 OWNER_ID = bot.me.id
