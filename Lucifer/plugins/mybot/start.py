@@ -24,11 +24,11 @@ import asyncio
 import os
 import requests
 from Lucifer.plugins.mybot.sql.blacklist_sql import all_bl_users
-from Lucifer.plugins import LION_NAME
+from Lucifer.plugins import LUCIFER_NAME
 from Lucifer.plugins.mybot.sql.userbase_sql import add_to_userbase, present_in_userbase, full_userbase
 from datetime import datetime
 from telethon import events
-from Lucifer.LionConfig import Var, Config
+from Lucifer.LuciferConfig import Var, Config
 from telegraph import Telegraph, upload_file
 from Lucifer import CUSTOM_PMPERMIT
 
