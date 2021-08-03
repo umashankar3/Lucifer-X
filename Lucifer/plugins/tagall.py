@@ -27,7 +27,7 @@ async def _(event):
     await event.delete()
 
 
-# Added to Lion by @its_xditya
+# Added to Lucifer by @its_xditya
 
 
 @Lucifer.on(admin_cmd(pattern=r"tagall", outgoing=True))
