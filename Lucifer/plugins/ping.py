@@ -1,5 +1,5 @@
 # special thanks to Sur_vivor
-# Re-written for Lion by @its_xditya
+# Re-written for Lucifer by @its_xditya
 
 import time
 from datetime import datetime
