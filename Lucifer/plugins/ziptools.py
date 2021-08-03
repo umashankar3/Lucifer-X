@@ -35,7 +35,7 @@ async def zipp(event):
         event.chat_id,
         xxx,
         force_document=True,
-        thumb="resources/Lion.jpg",
+        thumb="resources/Lucifer.jpg",
         caption=f"`{xxx.name}`",
         reply_to=reply,
     )
@@ -138,7 +138,7 @@ async def do_zip(event):
         event.chat_id,
         xxx,
         force_document=True,
-        thumb="resources/lion.jpg",
+        thumb="resources/lucifer.jpg",
     )
     os.system("rm -rf zip")
     os.remove("luciferub.zip")
