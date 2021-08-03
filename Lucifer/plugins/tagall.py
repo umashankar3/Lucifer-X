@@ -6,7 +6,7 @@ from telethon.tl.types import ChannelParticipantsAdmins
 
 from Lucifer.utils import admin_cmd
 
-# Added to Lion by @its_xditya
+# Added to Lucifer by @its_xditya
 
 
 @Lucifer.on(admin_cmd(pattern=r"administrator", outgoing=True))
