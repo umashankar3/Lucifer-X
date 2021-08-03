@@ -27,7 +27,7 @@ from telethon import Button, custom, events, functions
 from telethon.tl.functions.users import GetFullUserRequest
 
 from Lucifer import ALIVE_NAME, CMD_HELP, CMD_LIST, CUSTOM_PMPERMIT, bot
-from Lucifer.LionConfig import Var
+from Lucifer.LuciferConfig import Var
 
 fuk_uid = bot.uid
 HELP_PIC = "https://telegra.ph/file/78bebb896c10ef6213066.jpg"
