@@ -1,5 +1,5 @@
 # Originally from Bothub
-# (c) 2020 Lion
+# (c) 2020 Lucifer
 
 import asyncio
 import os
@@ -7,7 +7,7 @@ import os
 from telethon import events
 from telethon.errors.rpcerrorlist import YouBlockedUserError
 
-# from Lion.utils import admin_cmd
+# from Lucifer.utils import admin_cmd
 from Lucifer import CMD_HELP, bot
 from Lucifer.utils import admin_cmd
 
