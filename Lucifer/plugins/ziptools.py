@@ -92,7 +92,7 @@ async def unzipp(event):
                 event.chat_id,
                 xxx,
                 force_document=True,
-                thumb="resources/lion.jpg",
+                thumb="resources/lucifer.jpg",
                 caption=f"`{xxx.name}`",
             )
         await xx.delete()
