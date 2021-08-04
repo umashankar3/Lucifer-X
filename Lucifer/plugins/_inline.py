@@ -144,7 +144,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         else:
             result = builder.article(
                 "𝚂𝙾𝚄𝚁𝙲𝙴 𝙲𝙾𝙳𝙴",
-                text="**Welcome to Lion**\n\n`Click below buttons for more`",
+                text="**Welcome to Lucifer**\n\n`Click below buttons for more`",
                 buttons=[
                     [
                         custom.Button.url(
@@ -350,7 +350,7 @@ async def _(event):
             else:
                 reply_pop_up_alert = help_string
             reply_pop_up_alert += "\n Use .unload {} to remove this plugin\n\
-                © Lion".format(
+                © Lucifer".format(
                 plugin_name
             )
             if len(help_string) >= 140:
@@ -379,7 +379,7 @@ def paginate_help(page_number, loaded_plugins, prefix):
     helpable_plugins = sorted(helpable_plugins)
     modules = [
         custom.Button.inline(
-            "{} {} {}".format(lion, x, lion), data="us_plugin_{}".format(x)
+            "{} {} {}".format(lucifer, x, lucifer), data="us_plugin_{}".format(x)
         )
         for x in helpable_plugins
     ]
