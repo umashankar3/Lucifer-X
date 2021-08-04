@@ -6,7 +6,7 @@
 import re
 
 from Lucifer import bot
-from Lucifer import bot as Lion
+from Lucifer import bot as Lucifer
 from Lucifer.utils import admin_cmd
 
 IF_EMOJI = re.compile(
