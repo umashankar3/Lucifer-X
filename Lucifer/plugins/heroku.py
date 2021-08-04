@@ -209,7 +209,7 @@ async def _(givelogs):
     await eor(givelogs, "Heroku Logs Incoming!!")
     await asyncio.sleep(5)
     await givelogs.delete()
-    return os.remove("logs-Lion.txt")
+    return os.remove("logs-Lucifer.txt")
 
 
 CMD_HELP.update(
