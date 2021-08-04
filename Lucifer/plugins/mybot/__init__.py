@@ -17,7 +17,7 @@
 from Lucifer.plugins import OWNER_ID, LUCIFER_NAME
 import time
 from datetime import datetime
-from Lucifer.LionConfig import Var
+from Lucifer.LuciferConfig import Var
 
 # start-other disabled
 startotherdis = """
