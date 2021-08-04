@@ -1,4 +1,4 @@
-# Re-written for Lion by @its_xditya
+# Re-written for Lucifer by @its_xditya
 # Kangers, repo will be taken down if these lines are removed
 
 """
@@ -179,7 +179,7 @@ async def _(event):
         elif i.status is None:
             n = n + 1
     if input_str:
-        required_string = """Lion has Kicked {} / {} users, out of which -
+        required_string = """Lucifer has Kicked {} / {} users, out of which -
 Deleted Accounts: {}
 UserStatusEmpty: {}
 UserStatusLastMonth: {}
