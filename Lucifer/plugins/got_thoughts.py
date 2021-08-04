@@ -149,7 +149,7 @@ async def _(event):
     if x == 25:
 
         await eor(
-            event, '`"A lion does not concern himself with the opinion of sheep."`'
+            event, '`"A lucifer does not concern himself with the opinion of sheep."`'
         )
 
     if x == 26:
