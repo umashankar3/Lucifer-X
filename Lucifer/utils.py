@@ -99,7 +99,7 @@ def load_module(shortname):
         spec.loader.exec_module(mod)
         print("Successfully (re)imported " + shortname)
     else:
-        import Lion.utils
+        import Lucifer.utils
         import importlib
         path = Path(f"Lucifer/plugins/{shortname}.py")
         name = "Lucifer.plugins.{}".format(shortname)
