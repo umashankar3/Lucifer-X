@@ -48,7 +48,7 @@ else:
 
 LUCIFERUSER = str(ALIVE_NAME) if ALIVE_NAME else "@LuciferXsupport"
 
-lucifer += f"L U C I F E R 𝚅𝙴𝚁𝚂𝙸𝙾𝙽: {luciferver}\n"
+lucifer = f"L U C I F E R 𝚅𝙴𝚁𝚂𝙸𝙾𝙽: {luciferver}\n"
 lucifer += f"𝙻𝙾𝙶 𝙶𝚁𝙾𝚄𝙿: {log}\n"
 lucifer += f"𝙼𝚈 𝙰𝚂𝚂𝙸𝚂𝚃𝙰𝙽𝚃 𝙱𝙾𝚃: {bots}\n"
 lucifer += f"𝙻𝚈𝙳𝙸𝙰: {lyd}\n"
