@@ -3,7 +3,7 @@ from telethon import events
 from telethon.errors.rpcerrorlist import YouBlockedUserError
 
 from Lucifer import CMD_HELP
-from Lucifee.utils import admin_cmd
+from Lucifer.utils import admin_cmd
 
 
 @Lucifer.on(admin_cmd(pattern=r"frybot"))
