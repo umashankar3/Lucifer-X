@@ -1,7 +1,7 @@
 {
  "name": "Lucifer 🇮🇳 UserBot",
  "description": "An advanced Telethon Userbot, from @LuciferXSupport",
- "logo": "https://user-images.githubusercontent.com/78837537/120152150-c37ad280-c20a-11eb-92ce-64b9124b05ed.jpg",
+ "logo": "https://telegra.ph/file/73373552e9217e010e853.jpg",
  "keywords": [
   "telegram",
   "userbot",
@@ -10,7 +10,7 @@
   "productivity"
  ],
  "repository": "https://github.com/kaal0408/Lucifer-X",
- "website": "https://MdNoor786.gitbook.io/Lion/",
+ "website": "https://kaal0408.gitbook.io/Lucifer/",
  "success_url": "https://t.me/LuciferXsupport",
  "stack": "container",
  "env": {
