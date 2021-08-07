@@ -190,7 +190,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
         else:
             await event.edit(
-                f"This is the PM Security for {DEFAULTUSER} to keep away spammers and retards.\n\nProtected by [Lion](t.me/LuciferXsupport)"
+                f"This is the PM Security for {DEFAULTUSER} to keep away spammers and retards.\n\nProtected by [Lucifer](t.me/LuciferXsupport)"
             )
 
     @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"menu")))
@@ -295,7 +295,7 @@ async def _(event):
 
     @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"statcheck")))
     async def rip(event):
-        text = lionstats
+        text = luciferstats
         await event.answer(text, alert=True)
 
     @tgbot.on(
@@ -350,7 +350,7 @@ async def _(event):
             else:
                 reply_pop_up_alert = help_string
             reply_pop_up_alert += "\n Use .unload {} to remove this plugin\n\
-                © Lion".format(
+                © Lucifer".format(
                 plugin_name
             )
             if len(help_string) >= 140:
