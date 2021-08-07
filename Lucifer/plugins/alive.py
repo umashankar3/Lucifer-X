@@ -1,5 +1,5 @@
 from userbot import *
-from LuciferBOT.utils import *
+from Lucifer.utils import *
 from userbot.cmdhelp import CmdHelp
 from telethon import events, version
 from telethon.events import NewMessage
