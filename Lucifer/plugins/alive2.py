@@ -52,10 +52,10 @@ async def hmm(yes):
     pm_caption += f"{luciferemoji} **𝙎𝙐𝙋𝙋𝙊𝙍𝙏 𝘾𝙃𝘼𝙉𝙉𝙀𝙇** ☞ [ᴊᴏɪɴ](https://t.me/LuciferXUpdates)\n"
     pm_caption += f"{luciferemoji} **𝙇𝙄𝘾𝙀𝙉𝙎𝙀**  ☞ [𝚃𝙴𝙰𝙼 𝙻𝙸𝙾𝙽 𝚄𝙱](https://github.com/kaal0408/Lucifer-X)\n"
     pm_caption += (
-        f"{luciferemoji} **𝘾𝙊𝙋𝙔𝙍𝙄𝙂𝙃𝙏 𝘽𝙔** ☞ [𝙻𝙸𝙾𝙽 𝚄𝙱](https://github.com/kaal0408/Lucifer-X)\n\n"
+        f"{luciferemoji} **𝘾𝙊𝙋𝙔𝙍𝙄𝙂𝙃𝙏 𝘽𝙔** ☞ [LUCIFER 𝚄𝙱](https://github.com/kaal0408/Lucifer-X)\n\n"
     )
-    pm_caption += f"{lionemoji} **LUCIFER 𝙐𝙋𝙏𝙄𝙈𝙀** ☞ {uptime}\n\n"
-    pm_caption += f"{lionemoji} **𝙈𝙔 𝙋𝙀𝙍𝙊 𝙈𝘼𝙎𝙏𝙀𝙍** ☞ [{DEFAULTUSER}](tg://user?id={fuk})\n"
+    pm_caption += f"{luciferemoji} **LUCIFER 𝙐𝙋𝙏𝙄𝙈𝙀** ☞ {uptime}\n\n"
+    pm_caption += f"{luciferemoji} **𝙈𝙔 𝙋𝙀𝙍𝙊 𝙈𝘼𝙎𝙏𝙀𝙍** ☞ [{DEFAULTUSER}](tg://user?id={fuk})\n"
     on = await borg.send_file(
         yes.chat_id, file=ALV_PIC, caption=pm_caption, link_preview=False
     )
