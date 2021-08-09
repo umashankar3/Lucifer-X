@@ -5,7 +5,7 @@ from asyncio import sleep
 from telethon.errors import rpcbaseerrors
 
 from Lucifer import BOTLOG, BOTLOG_CHATID, CMD_HELP
-from Lucifer.LionConfig import Var
+from Lucifer.LuciferConfig import Var
 from Lucifer.utils import admin_cmd, errors_handler
 
 BOTLOG_CHATID = Var.PRIVATE_GROUP_ID
