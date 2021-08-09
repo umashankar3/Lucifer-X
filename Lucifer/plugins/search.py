@@ -1,7 +1,7 @@
 """
 UserBot Module to search the internet
 All-in-one by @its_xditya
-(c)Lion
+(c)Lucifer
 
 Available commands:
 .ggl - howtogoogle
