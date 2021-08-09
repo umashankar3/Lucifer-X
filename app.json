@@ -39,7 +39,7 @@
    "required": true
   },
   "STRING_SESSION": {
-   "description": "Get this value by running python3 telesetup.py locally or https://replit.com/@LionUB/stringsession#main.py online.",
+   "description": "Get this value by running python3 telesetup.py locally or (https://replit.com/@simpleboy786/Lucifer?v=1)  online.",
    "value": ""
   },
   "CUSTOM_ALIVE_EMOJI": {
