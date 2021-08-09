@@ -214,15 +214,15 @@ async def _(event):
 
     await event.edit(f"UnFbaning in {len(fedList)} feds.")
     try:
-        await Lion.send_message(chat, f"/start")
+        await Lucifer.send_message(chat, f"/start")
     except BaseException:
         await event.edit("FBAN_GROUP_ID is incorrect.")
         return
     await asyncio.sleep(5)
     for fed in fedList:
-        await Lion.send_message(chat, f"/joinfed {fed}")
+        await Lucifer.send_message(chat, f"/joinfed {fed}")
         await asyncio.sleep(5)
-        await Lion.send_message(chat, f"/unfban {FBAN}")
+        await Lucifer.send_message(chat, f"/unfban {FBAN}")
         await asyncio.sleep(5)
     await event.edit(f"SuperUnFBan Completed. Affected {len(fedList)} feds.\n#TB")
 
