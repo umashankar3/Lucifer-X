@@ -137,9 +137,9 @@ By - {}
 
 
 @Lucifer.on(admin_cmd(pattern="vsong (.*)"))
-async def download_video(Lion):
-    x = await eor(Lion, "Processing..")
-    url = Lion.pattern_match.group(1)
+async def download_video(Lucifer):
+    x = await eor(Lucifer, "Processing..")
+    url = Lucifer.pattern_match.group(1)
     if not url:
         return await x.edit("**Error**\nUsage - `.vsong <song name>`")
     search = SearchVideos(url, offset=1, mode="json", max_results=1)
