@@ -35,13 +35,13 @@ from youtube_dl.utils import (
 )
 from youtubesearchpython import SearchVideos
 
-from Lion import CMD_HELP
+from Lucifer import CMD_HELP
 
 
-@Lion.on(admin_cmd(pattern="song (.*)"))
-async def download_video(Lion):
-    x = await eor(Lion, "ѕєαя¢нιиg...")
-    url = Lion.pattern_match.group(1)
+@Lucifer.on(admin_cmd(pattern="song (.*)"))
+async def download_video(Lucifer):
+    x = await eor(Lucifer, "ѕєαя¢нιиg...")
+    url = Lucifer.pattern_match.group(1)
     if not url:
         return await x.edit("**Error**\nUsage - `.song <song name>`")
     search = SearchVideos(url, offset=1, mode="json", max_results=1)
