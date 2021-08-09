@@ -75,12 +75,12 @@ async def on_afk(event):
         return False
     if USER_AFK and not (await event.get_sender()).bot:
         msg = None
-        if reason is not None and lion == "True":
+        if reason is not None and lucifer == "True":
             message_to_reply = "**AFK**\n✘{CUSTOM}✘\n\nAғᴋ ʀᴇᴀsᴏɴ: {reson}".format(
                 CUSTOM=CUSTOM_AFK,
                 reson=reason,
             )
-        elif lion == "False":
+        elif lucifer == "False":
             message_to_reply = "**AFK**\n✘{CUSTOM}✘\n\nAғᴋ ʀᴇᴀsᴏɴ: {reson}".format(
                 CUSTOM=CUSTOM_AFK,
                 reson=reason,
