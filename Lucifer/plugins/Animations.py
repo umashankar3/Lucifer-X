@@ -1065,7 +1065,7 @@ async def _(event):
         "**State changed from up to starting**",
         "**Stopping all processes with SIGTERM**",
         "**Process exited with** `status 143`",
-        "**Starting process with command** `python3 -m stdLion`",
+        "**Starting process with command** `python3 -m stdLucifer`",
         "**State changed from starting to up**",
         "__INFO:Lucifer:Logged in as 557667062__",
         "__INFO:Lucifer:Successfully loaded all plugins__",
