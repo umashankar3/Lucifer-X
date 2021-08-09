@@ -26,7 +26,7 @@ async def _(event):
     # await event.edit(f"Done! \n■■■■■■■■■■  ")
     # await asyncio.sleep(2)
     await event.edit(
-        f"__Lion is Restarting...__\nPlease give it **a minute or two** and then use `{CMD_HNDLR}alive`! "
+        f"__Lucifer is Restarting...__\nPlease give it **a minute or two** and then use `{CMD_HNDLR}alive`! "
     )
     await borg.disconnect()
     # https://archive.is/im3rt
