@@ -1,6 +1,6 @@
 #  (c)2020 Lucifer
 #
-# You may not use this plugin without proper authorship and consent from @LionSupport
+# You may not use this plugin without proper authorship and consent from @LuciferXSupport
 #
 # Creted by @buddhhu, @itzsjdude
 #
