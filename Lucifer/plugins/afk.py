@@ -147,10 +147,10 @@ async def _(event):
             input_str = event.pattern_match.group(1)
             if url:
                 if input_str is not None:
-                    lion = "True"
+                    lucifer = "True"
                     reason = f"`{input_str}`[‎‏‏‎ ‎](https://telegra.ph/{url[0]})"
                 else:
-                    lion = "False"
+                    lucifer = "False"
                     reason = f"[‎‏‏‎ ‎](https://telegra.ph/{url[0]})"
             else:
                 if input_str is not None:
