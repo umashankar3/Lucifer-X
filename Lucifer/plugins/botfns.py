@@ -19,7 +19,7 @@ from telethon import events
 from telethon.errors.rpcerrorlist import YouBlockedUserError
 
 from Lucifer import CMD_HELP
-from Lucifer.LionConfig import Var
+from Lucifer.LuciferConfig import Var
 from Lucifer.utils import admin_cmd, sudo_cmd
 
 telegraph = Telegraph()
