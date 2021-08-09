@@ -249,8 +249,8 @@ async def do_pm_permit_action(chat_id, event):
     MSG = USER_BOT_NO_WARN.format(
         DEFAULTUSER, myid, MESAG, PM_WARNS[chat_id] + 1, Config.MAX_SPAM
     )
-    lion = await bot.inline_query(mybot, MSG)
-    r = await lion[0].click(event.chat_id, hide_via=True)
+    lucifer = await bot.inline_query(mybot, MSG)
+    r = await lucifer[0].click(event.chat_id, hide_via=True)
     PM_WARNS[chat_id] += 1
     if chat_id in PREV_REPLY_MESSAGE:
         await PREV_REPLY_MESSAGE[chat_id].delete()
