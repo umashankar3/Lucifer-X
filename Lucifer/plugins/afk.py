@@ -111,7 +111,7 @@ async def on_afk(event):
                         ],
                     )
                 except BaseException:
-                    await Lion.send_message(
+                    await Lucifer.send_message(
                         Var.PRIVATE_GROUP_ID,
                         f"Please add {MYBOT} here for afk tags to work.",
                     )
@@ -127,7 +127,7 @@ async def _(event):
     global afk_start
     global afk_end
     global reason
-    global lion
+    global lucifer
     USER_AFK = {}
     afk_time = None
     last_afk_message = {}
