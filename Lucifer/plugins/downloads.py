@@ -1,5 +1,5 @@
 """
-Gdrive and mega downloader plugin for Lion
+Gdrive and mega downloader plugin for Lucifer
 Ported from other bots
 """
 import asyncio
