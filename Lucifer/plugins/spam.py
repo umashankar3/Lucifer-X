@@ -3,7 +3,7 @@ import os
 
 from telegraph import Telegraph, upload_file
 
-from Lucifer.LionConfig import Config
+from Lucifer.LuciferConfig import Config
 
 from .. import CMD_HELP
 
