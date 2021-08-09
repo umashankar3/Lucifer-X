@@ -43,7 +43,7 @@ async def _(event):
             await borg.send_file(event.chat_id, response.message.media)
 
 
-# For Lion
+# For Lucifer
 CMD_HELP.update(
     {
         "ascii": "`.ascii` reply to any image file:\
