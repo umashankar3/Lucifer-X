@@ -141,7 +141,7 @@ async def _(event):
     exCount = 0
     for fed in fedList:
         if Config.EXCLUDE_FED and fed in excludeFed:
-            await Lion.send_message(chat, f"{fed} Excluded.")
+            await Lucifer.send_message(chat, f"{fed} Excluded.")
             exCount += 1
             continue
         await Lucifer.send_message(chat, f"/joinfed {fed}")
