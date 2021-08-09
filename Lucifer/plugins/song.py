@@ -121,7 +121,7 @@ By - {}
     )
     await x.edit(f"`{upteload}`")
     await borg.send_file(
-        Lion.chat_id,
+        Lucifer.chat_id,
         f"{rip_data['id']}.mp3",
         supports_streaming=True,
         caption=f"⫸ Song - {rip_data['title']}\n⫸ By - {rip_data['uploader']}\n",
@@ -136,7 +136,7 @@ By - {}
     os.remove(f"{rip_data['id']}.mp3")
 
 
-@Lion.on(admin_cmd(pattern="vsong (.*)"))
+@Lucifer.on(admin_cmd(pattern="vsong (.*)"))
 async def download_video(Lion):
     x = await eor(Lion, "Processing..")
     url = Lion.pattern_match.group(1)
