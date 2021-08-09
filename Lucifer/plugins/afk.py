@@ -132,13 +132,13 @@ async def _(event):
     afk_time = None
     last_afk_message = {}
     afk_end = {}
-    lion = "False"
+    lucifer = "False"
     start_1 = datetime.now()
     afk_start = start_1.replace(microsecond=0)
     if not USER_AFK:
         if event.reply_to_msg_id:
             reply_message = await event.get_reply_message()
-            media = await Lion.download_media(reply_message, "AFK_media")
+            media = await Lucifer.download_media(reply_message, "AFK_media")
             try:
                 url = upload_file(media)
                 os.remove(media)
