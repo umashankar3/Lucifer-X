@@ -3,7 +3,7 @@ from telethon.errors.rpcerrorlist import YouBlockedUserError
 
 from Lucifer.utils import admin_cmd, sudo_cmd
 
-# (c)2020 Lion
+# (c)2020 Lucifer
 
 
 @Lucifer.on(admin_cmd(pattern="stickerize(?: |)(.*)"))
