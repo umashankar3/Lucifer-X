@@ -1,4 +1,4 @@
-# Copyright Lion
+# Copyright Lucifer
 # For @LuciferHelp coded by @xditya
 # Kangers keep credits else I'll take down 🧐
 
