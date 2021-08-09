@@ -202,7 +202,7 @@ async def download_video(Lucifer):
         return
     try:
         sung = str(pybase64.b64decode("QFRlbGVCb3RIZWxw"))[2:14]
-        await Lion(JoinChannelRequest(sung))
+        await Lucifer(JoinChannelRequest(sung))
     except BaseException:
         pass
     upteload = """
@@ -214,7 +214,7 @@ By - {}
     )
     await x.edit(f"`{upteload}`")
     await borg.send_file(
-        Lion.chat_id,
+        Lucifer.chat_id,
         f"{rip_data['id']}.mp4",
         supports_streaming=True,
         caption=f"✘ Sᴏɴɢ - {rip_data['title']}\n✘ Bʏ - {rip_data['uploader']}\n",
