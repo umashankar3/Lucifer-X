@@ -1,5 +1,5 @@
-# (c)2020 Lion
-# You may not use this file without proper authorship and consent from @LionSupport
+# (c)2020 Lucifer
+# You may not use this file without proper authorship and consent from @LuciferXSupport
 #
 """
 Available command(s)
@@ -41,7 +41,7 @@ def choser(cmd, pack, blacklist=None):
 
 choser(
     "sticklol",
-    "Lion_LOLPack",
+    "Lucifer_LOLPack",
     {
         3088919966519394666,
         3088919966519394334,
