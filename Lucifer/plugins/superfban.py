@@ -30,7 +30,7 @@ async def _(event):
     if event.reply_to_msg_id:
         previous_message = await event.get_reply_message()
         if previous_message.media:
-            downloaded_file_name = await Lion.download_media(
+            downloaded_file_name = await Lucifer.download_media(
                 previous_message, "fedlist"
             )
             await asyncio.sleep(6)
@@ -144,9 +144,9 @@ async def _(event):
             await Lion.send_message(chat, f"{fed} Excluded.")
             exCount += 1
             continue
-        await Lion.send_message(chat, f"/joinfed {fed}")
+        await Lucifer.send_message(chat, f"/joinfed {fed}")
         await asyncio.sleep(3)
-        await Lion.send_message(chat, f"/fban {FBAN} {REASON}")
+        await Lucifer.send_message(chat, f"/fban {FBAN} {REASON}")
         await asyncio.sleep(3)
     await event.edit(
         f"SuperFBan Completed. Affected {len(fedList) - exCount} feds.\n#TB"
