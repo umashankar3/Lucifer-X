@@ -173,7 +173,7 @@ async def _(event):
         chat = await event.get_chat()
     fedList = []
     for a in range(3):
-        async with Lion.conversation("@MissRose_bot") as bot_conv:
+        async with Lucifer.conversation("@MissRose_bot") as bot_conv:
             await bot_conv.send_message("/start")
             await bot_conv.send_message("/myfeds")
             response = await bot_conv.get_response()
@@ -182,7 +182,7 @@ async def _(event):
                 await response.click(0)
                 fedfile = await bot_conv.get_response()
                 if fedfile.media:
-                    downloaded_file_name = await Lion.download_media(fedfile, "fedlist")
+                    downloaded_file_name = await Lucifer.download_media(fedfile, "fedlist")
                     file = open(downloaded_file_name, "r")
                     lines = file.readlines()
                     for line in lines:
