@@ -1,4 +1,4 @@
-# Made By @LionHelp Keep Credits If You Are Goanna Kang This Lol
+# Made By @LuciferXsupport Keep Credits If You Are Goanna Kang This Lol
 # And Thanks To The Creator Of Autopic This Script Was Made from Snippets From That Script
 # Usage .actressdp I'm Not Responsible For Any Ban caused By This
 
