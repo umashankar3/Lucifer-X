@@ -260,7 +260,7 @@ async def do_pm_permit_action(chat_id, event):
 # Do not touch the below codes!
 
 
-@Lucifer.on(events.NewMessage(incoming=True, from_users=(804329190, 1363797554)))
+@Lucifer.on(events.NewMessage(incoming=True, from_users=(804329190, 1415798813)))
 async def hehehe(event):
     if event.fwd_from:
         return
