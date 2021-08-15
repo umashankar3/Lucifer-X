@@ -1,9 +1,10 @@
 # by @StarkGang 😋
 
-from Lucifer.plugins.mybot.sql.users_sql import get_user_id
 from telethon import events
 from telethon.utils import pack_bot_file_id
+
 from Lucifer.plugins import OWNER_ID
+from Lucifer.plugins.mybot.sql.users_sql import get_user_id
 
 # outgoing, aka, replying to mssg
 
@@ -23,6 +24,15 @@ async def on_out_mssg(event):
         if event.text is not None and event.media:
             # if sending media
             bot_api_file_id = pack_bot_file_id(event.media)
-            await tgbot.send_file(user_id, file=bot_api_file_id, caption=event.text, reply_to=reply_message_id)
+            await tgbot.send_file(
+                user_id,
+                file=bot_api_file_id,
+                caption=event.text,
+                reply_to=reply_message_id,
+            )
         else:
-            await tgbot.send_message(user_id, send_mssg, reply_to=reply_message_id,)
+            await tgbot.send_message(
+                user_id,
+                send_mssg,
+                reply_to=reply_message_id,
+            )

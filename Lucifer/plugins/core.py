@@ -63,7 +63,6 @@ async def send(event):
         await ok.edit("**404**: `No Such Plugin!`")
 
 
-
 @Lucifer.on(admin_cmd(pattern=r"unload (?P<shortname>\w+)$"))
 async def unload(event):
     if event.fwd_from:
@@ -74,9 +73,10 @@ async def unload(event):
         await event.edit(f"Lucifer has successfully unloaded {shortname}")
     except Exception as e:
         await event.edit(
-            "Lucifer has successfully unloaded {shortname}\n{}".format(shortname, str(e))
+            "Lucifer has successfully unloaded {shortname}\n{}".format(
+                shortname, str(e)
+            )
         )
-
 
 
 @Lucifer.on(admin_cmd(pattern="install"))
@@ -110,6 +110,7 @@ async def install(event):
             os.remove(downloaded_file_name)
     await asyncio.sleep(DELETE_TIMEOUT)
     await event.delete()
+
 
 @Lucifer.on(admin_cmd(pattern=r"installall$"))
 async def install(event):
@@ -148,7 +149,7 @@ async def install(event):
         await a.edit(f"{text}\n**Installed every plugin.**")
         await event.delete()
         await b.delete()
-        
+
 
 @Lucifer.on(admin_cmd(pattern=r"load (?P<shortname>\w+)$"))
 async def load(event):
@@ -166,9 +167,6 @@ async def load(event):
         await event.edit(
             f"Lucifer could not load {shortname} because of the following error.\n{str(e)}"
         )
-
-
-
 
 
 CMD_HELP.update(

@@ -8,7 +8,8 @@ from telethon.tl import functions, types
 
 from Lucifer import ALIVE_NAME, CMD_HELP
 from Lucifer.LuciferConfig import Config, Var
-#===========CUSTOM AFK DONE ✅
+
+# ===========CUSTOM AFK DONE ✅
 # --=============================================--#
 global USER_AFK  # pylint:disable=E0602
 global afk_time  # pylint:disable=E0602
@@ -22,7 +23,11 @@ afk_time = None
 last_afk_message = {}
 afk_start = {}
 BOTLOG = True
-CUSTOM_AFK = Var.CUSTOM_AFK if Var.CUSTOM_AFK else "**Hᴇʏʏ\n\nMʏ ᴘᴇʀᴜ ᴍᴀsᴛᴇʀ ɪs ᴄᴜʀʀᴇɴᴛʟʏ ᴀғᴋ ɪ ᴀᴍ ʜᴇʀ ᴀssɪsᴛᴀɴᴛ\n\nʟᴇᴀᴠᴇ ʏᴏᴜʀ ᴍᴇssᴀɢᴇ ʜᴇʀᴇ\nɪ ᴡɪʟʟ ɪɴғᴏʀᴍ ʜɪᴍ ᴡʜᴇɴ ʜᴇ ᴡɪʟʟ ᴄᴏᴍᴇ ʙᴀᴄᴋ 😗😗"
+CUSTOM_AFK = (
+    Var.CUSTOM_AFK
+    if Var.CUSTOM_AFK
+    else "**Hᴇʏʏ\n\nMʏ ᴘᴇʀᴜ ᴍᴀsᴛᴇʀ ɪs ᴄᴜʀʀᴇɴᴛʟʏ ᴀғᴋ ɪ ᴀᴍ ʜᴇʀ ᴀssɪsᴛᴀɴᴛ\n\nʟᴇᴀᴠᴇ ʏᴏᴜʀ ᴍᴇssᴀɢᴇ ʜᴇʀᴇ\nɪ ᴡɪʟʟ ɪɴғᴏʀᴍ ʜɪᴍ ᴡʜᴇɴ ʜᴇ ᴡɪʟʟ ᴄᴏᴍᴇ ʙᴀᴄᴋ 😗😗"
+)
 botname = Var.TG_BOT_USER_NAME_BF_HER
 if botname.startswith("@"):
     MYBOT = botname
@@ -171,7 +176,9 @@ async def _(event):
             await asyncio.sleep(5)
             await event.delete()
         else:
-            await event.edit(f"**Hᴇʏ {DEFAULTUSER} ᴍᴀsᴛᴇʀ\nFʀᴏᴍ ɴᴏᴡ ᴏɴᴡᴀʀᴅs ɪ ᴡɪʟʟ ʀᴇᴘʟʏ ʏᴏᴜʀ ᴍsɢ ᴛɪʟʟ ʏᴏᴜ** **[AFK]**")
+            await event.edit(
+                f"**Hᴇʏ {DEFAULTUSER} ᴍᴀsᴛᴇʀ\nFʀᴏᴍ ɴᴏᴡ ᴏɴᴡᴀʀᴅs ɪ ᴡɪʟʟ ʀᴇᴘʟʏ ʏᴏᴜʀ ᴍsɢ ᴛɪʟʟ ʏᴏᴜ** **[AFK]**"
+            )
             await asyncio.sleep(5)
             await event.delete()
         if BOTLOG:

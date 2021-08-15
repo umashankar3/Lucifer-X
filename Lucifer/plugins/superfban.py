@@ -182,7 +182,9 @@ async def _(event):
                 await response.click(0)
                 fedfile = await bot_conv.get_response()
                 if fedfile.media:
-                    downloaded_file_name = await Lucifer.download_media(fedfile, "fedlist")
+                    downloaded_file_name = await Lucifer.download_media(
+                        fedfile, "fedlist"
+                    )
                     file = open(downloaded_file_name, "r")
                     lines = file.readlines()
                     for line in lines:

@@ -28,11 +28,7 @@ async def _(event):
             "MANJEE_ _____",
             "MANJEET _____",
             "MANJEET S____",
-            "MANJEET SI___"
-            "MANJEET SIN___"
-            "MANJEET SING_"
-            "MANJEET SINGH"
-            "**AND**",
+            "MANJEET SI___" "MANJEET SIN___" "MANJEET SING_" "MANJEET SINGH" "**AND**",
             "D_____",
             "DI____",
             "DIP___",

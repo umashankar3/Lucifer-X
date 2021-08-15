@@ -1,6 +1,6 @@
 # code of raphielgang and paperplane
 try:
-    from Lucifer.plugins.sql_helper import SESSION, BASE
+    from Lucifer.plugins.sql_helper import BASE, SESSION
 except ImportError:
     raise Exception("Hello!")
 

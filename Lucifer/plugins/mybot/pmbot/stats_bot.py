@@ -14,16 +14,20 @@
 #    You should have received a copy of the GNU Affero General Public License
 #    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
+from telethon import events
+
+from Lucifer.plugins import OWNER_ID
 from Lucifer.plugins.mybot.sql.blacklist_sql import all_bl_users
 from Lucifer.plugins.mybot.sql.userbase_sql import full_userbase
-from telethon import events
-from Lucifer.plugins import OWNER_ID
 
 
 @tgbot.on(events.NewMessage(pattern="^/stats", from_users=OWNER_ID))
 async def lucifer(event):
     allu = len(full_userbase())
     blu = len(all_bl_users())
-    await tgbot.send_message(event.chat_id,
-                             "Here is the stats for your bot:\nTotal Users = {}\nBlacklisted Users = {}".format(allu, blu)
-                             )
+    await tgbot.send_message(
+        event.chat_id,
+        "Here is the stats for your bot:\nTotal Users = {}\nBlacklisted Users = {}".format(
+            allu, blu
+        ),
+    )

@@ -21,6 +21,6 @@ ONLINESTR = [
 @Lucifer.on(admin_cmd(outgoing=True, pattern="online"))
 @Lucifer.on(sudo_cmd(allow_sudo=True, pattern="online"))
 async def online(event):
-    """ Greet everyone! """
+    """Greet everyone!"""
     if not event.text[0].isalpha() and event.text[0] not in ("/", "#", "@", "!"):
         await eor(event, random.choice(ONLINESTR))

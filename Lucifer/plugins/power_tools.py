@@ -39,7 +39,9 @@ async def _(event):
 async def _(event):
     if event.fwd_from:
         return
-    await event.edit("Lucifer is turning off... Manually turn me on later, from heroku.")
+    await event.edit(
+        "Lucifer is turning off... Manually turn me on later, from heroku."
+    )
     await borg.disconnect()
 
 

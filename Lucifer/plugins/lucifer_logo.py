@@ -1,14 +1,13 @@
 import os
 import random
-import time
 
 from PIL import Image, ImageDraw, ImageFont
-from telethon.tl.types import InputMessagesFilterPhotos, InputMessagesFilterDocument
+from telethon.tl.types import InputMessagesFilterDocument, InputMessagesFilterPhotos
 
 from . import *
 
-
 PICS_STR = []
+
 
 @bot.on(admin_cmd(pattern=r"logo ?(.*)"))
 @bot.on(sudo_cmd(pattern=r"logo ?(.*)", allow_sudo=True))
@@ -19,8 +18,10 @@ async def lg1(Luciferevent):
         rply = await Luciferevent.get_reply_message()
         logo_ = await rply.download_media()
     else:
-        async for i in bot.iter_messages("@LuciferXlogos", filter=InputMessagesFilterPhotos):
-         PICS_STR.append(i)
+        async for i in bot.iter_messages(
+            "@LuciferXlogos", filter=InputMessagesFilterPhotos
+        ):
+            PICS_STR.append(i)
         pic = random.choice(PICS_STR)
         logo_ = await pic.download_media()
     text = Luciferevent.pattern_match.group(1)
@@ -67,7 +68,7 @@ async def lg1(Luciferevent):
         os.remove(fnt)
         os.remove(logo_)
     except:
-     pass
+        pass
 
 
 async def get_font_file(client, channel_id):

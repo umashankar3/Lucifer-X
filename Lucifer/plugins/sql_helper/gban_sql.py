@@ -1,5 +1,6 @@
-from Lucifer.plugins.sql_helper import SESSION, BASE
 from sqlalchemy import Column, String
+
+from Lucifer.plugins.sql_helper import BASE, SESSION
 
 
 class GBan(BASE):
