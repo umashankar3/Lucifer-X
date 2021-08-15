@@ -27,7 +27,7 @@ jobs:
       # commit changes
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: 'Improve
+          commit_message: 'Improve'
           commit_options: '--no-verify'
           repository: .
           commit_user_name: MdNoor786
