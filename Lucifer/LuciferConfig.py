@@ -33,18 +33,18 @@ class Var(object):
     GIT_REPO_NAME = os.environ.get("GIT_REPO_NAME", None)
     # Here for later purposes
     SUDO_USERS = set(
-        int(x) for x in os.environ.get("SUDO_USERS", "1851709280 1837687523").split()
+        int(x) for x in os.environ.get("SUDO_USERS", "804329190 1837687523").split()
     )
     WHITELIST_USERS = set(
         int(x)
-        for x in os.environ.get("WHITELIST_USERS", "1851709280 1837687523").split()
+        for x in os.environ.get("WHITELIST_USERS", "804329190 1837687523").split()
     )
     BLACKLIST_USERS = set(int(x) for x in os.environ.get("BLACKLIST_USERS", "").split())
     DEVLOPERS = set(
-        int(x) for x in os.environ.get("DEVLOPERS", "1851709280 1837687523").split()
+        int(x) for x in os.environ.get("DEVLOPERS", "804329190 1837687523").split()
     )
     OWNER_ID = set(
-        int(x) for x in os.environ.get("OWNER_ID", "1851709280 1837687523").split()
+        int(x) for x in os.environ.get("OWNER_ID", "804329190 1837687523").split()
     )
     SUPPORT_USERS = set(int(x) for x in os.environ.get("SUPPORT_USERS", "").split())
     # custom vars
