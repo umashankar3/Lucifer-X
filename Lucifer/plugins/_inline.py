@@ -165,7 +165,11 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
                             "https://heroku.com/deploy?template=https://github.com/kaal0408/Lucifer-X",
                         ),
                     ],
-                    [custom.Button.url("Updates ↗️", "https://t.me/Lucifer_Support_group")],
+                    [
+                        custom.Button.url(
+                            "Updates ↗️", "https://t.me/Lucifer_Support_group"
+                        )
+                    ],
                 ],
                 link_preview=False,
             )
@@ -183,9 +187,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             # https://t.me/TelethonChat/115200
             await event.edit(buttons=buttons)
         else:
-            reply_pop_up_alert = (
-                "Please get your own Userbot from @Lucifer_support_group , and don't use mine!"
-            )
+            reply_pop_up_alert = "Please get your own Userbot from @Lucifer_support_group , and don't use mine!"
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
     @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"pmclick")))
@@ -296,7 +298,9 @@ async def _(event):
                 "Menu Closed!!", buttons=[Button.inline("Re-open Menu", data="reopen")]
             )
         else:
-            reply_pop_up_alert = "Please get your own userbot from @Lucifer_support_group "
+            reply_pop_up_alert = (
+                "Please get your own userbot from @Lucifer_support_group "
+            )
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
     @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"statcheck")))
