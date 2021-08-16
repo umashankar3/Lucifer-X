@@ -46,7 +46,7 @@ if Var.PMSECURITY.lower() == "off":
 else:
     pm = "Enabled"
 
-LUCIFERUSER = str(ALIVE_NAME) if ALIVE_NAME else "@LuciferXsupport"
+LUCIFERUSER = str(ALIVE_NAME) if ALIVE_NAME else "@Lucifer_support_group"
 
 lucifer = f"L U C I F E R 𝚅𝙴𝚁𝚂𝙸𝙾𝙽: {luciferver}\n"
 lucifer += f"𝙻𝙾𝙶 𝙶𝚁𝙾𝚄𝙿: {log}\n"
@@ -54,7 +54,7 @@ lucifer += f"𝙼𝚈 𝙰𝚂𝚂𝙸𝚂𝚃𝙰𝙽𝚃 𝙱𝙾𝚃: {bots}\
 lucifer += f"𝙻𝚈𝙳𝙸𝙰: {lyd}\n"
 lucifer += f"𝚂𝚄𝙳𝙾 𝚄𝚂𝙴𝚁: {sudo}\n"
 lucifer += f"𝙿𝙼 𝚂𝙴𝙲𝚄𝚁𝙸𝚃𝚈: {pm}\n"
-lucifer += f"\n𝚅𝙸𝚂𝙸𝚃 @LuciferXsupport 𝙵𝙾𝚁 𝙰𝚂𝚂𝙸𝚂𝚃𝙰𝙽𝚃.\n"
+lucifer += f"\n𝚅𝙸𝚂𝙸𝚃 @Lucifer_support_group 𝙵𝙾𝚁 𝙰𝚂𝚂𝙸𝚂𝚃𝙰𝙽𝚃.\n"
 luciferstats = f"{lucifer}"
 
 LUCIFER_NAME = bot.me.first_name
