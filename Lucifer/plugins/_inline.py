@@ -90,7 +90,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             but += [[custom.Button.inline("Iɴʟɪɴᴇ", data="linline")]]
             but += [
                 [
-                    Button.url("🔰 Sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ »»", "t.me/LuciferXsupport"),
+                    Button.url("🔰 Sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ »»", "t.me/Lucifer_support_group"),
                     Button.url("🔰 Uᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ", "t.me/LuciferXupdates"),
                 ]
             ]
@@ -103,7 +103,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         elif event.query.user_id == bot.uid and query.startswith("stats"):
             result = builder.article(
                 title="Stats",
-                text=f"**L U C I F E R 𝚄𝙱 𝚂𝚃𝙰𝚃𝚂 𝙾𝙵 𝚃𝙷𝙴 [{DEFAULTUSER}](tg://user?id={myid})**\n\n__𝙱𝙾𝚃 𝙸𝚂 𝚂𝙼𝙾𝙾𝚃𝙷𝙻𝚈 𝚁𝚄𝙽𝙽𝙸𝙽𝙶, 𝙼𝙰𝚂𝚃𝙴𝚁!__\n\n(c) @LuciferXsupport",
+                text=f"**L U C I F E R 𝚄𝙱 𝚂𝚃𝙰𝚃𝚂 𝙾𝙵 𝚃𝙷𝙴 [{DEFAULTUSER}](tg://user?id={myid})**\n\n__𝙱𝙾𝚃 𝙸𝚂 𝚂𝙼𝙾𝙾𝚃𝙷𝙻𝚈 𝚁𝚄𝙽𝙽𝙸𝙽𝙶, 𝙼𝙰𝚂𝚃𝙴𝚁!__\n\n(c) @Lucifer_support_group",
                 buttons=[
                     [custom.Button.inline("Stats", data="statcheck")],
                     [Button.url("Repo", "https://github.com/kaal0408/Lucifer-X")],
@@ -143,7 +143,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
                             "https://heroku.com/deploy?template=https://github.com/kaal0408/Lucifer-X",
                         ),
                     ],
-                    [Button.url("𝚂𝚄𝙿𝙿𝙾𝚁𝚃 𝙲𝙷𝙰𝚃", "https://t.me/LuciferXsupport")],
+                    [Button.url("𝚂𝚄𝙿𝙿𝙾𝚁𝚃 𝙲𝙷𝙰𝚃", "https://t.me/Lucifer_support_group")],
                 ],
             )
         else:
@@ -153,7 +153,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
                 buttons=[
                     [
                         custom.Button.url(
-                            "🚑 Support Group 🚑", "https://t.me/luciferXsupport"
+                            "🚑 Support Group 🚑", "https://t.me/Lucifer_support_group"
                         )
                     ],
                     [
@@ -165,7 +165,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
                             "https://heroku.com/deploy?template=https://github.com/kaal0408/Lucifer-X",
                         ),
                     ],
-                    [custom.Button.url("Updates ↗️", "https://t.me/LuciferXSupport")],
+                    [custom.Button.url("Updates ↗️", "https://t.me/Lucifer_Support_group")],
                 ],
                 link_preview=False,
             )
@@ -184,7 +184,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             await event.edit(buttons=buttons)
         else:
             reply_pop_up_alert = (
-                "Please get your own Userbot from @LuciferHelp , and don't use mine!"
+                "Please get your own Userbot from @Lucifer_support_group , and don't use mine!"
             )
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
@@ -195,7 +195,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
         else:
             await event.edit(
-                f"This is the PM Security for {DEFAULTUSER} to keep away spammers and retards.\n\nProtected by [Lucifer](t.me/LuciferXsupport)"
+                f"This is the PM Security for {DEFAULTUSER} to keep away spammers and retards.\n\nProtected by [Lucifer](t.me/Lucifer_support_group)"
             )
 
     @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"menu")))
@@ -296,7 +296,7 @@ async def _(event):
                 "Menu Closed!!", buttons=[Button.inline("Re-open Menu", data="reopen")]
             )
         else:
-            reply_pop_up_alert = "Please get your own userbot from @LuciferXsupport "
+            reply_pop_up_alert = "Please get your own userbot from @Lucifer_support_group "
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
     @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"statcheck")))
