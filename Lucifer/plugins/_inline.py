@@ -85,7 +85,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             rev_text = query[::-1]
             but = [[custom.Button.inline("💬 Oᴘᴇɴ ʜᴇʟᴘ ᴍᴇɴᴜ »»", data="menu")]]
             but += [[custom.Button.inline("💡 Pɪɴɢ »»", data="pkng")]]
-            but += [[Button.url("Mʏ ᴍᴀsᴛᴇʀ »»", "tg://user?id={fuk_uid})")]]
+            but += [[Button.url("Mʏ ᴍᴀsᴛᴇʀ »»", f"tg://user?id={fuk_uid})")]]
             but += [[custom.Button.inline("Mᴀsᴛᴇʀ•ᴛᴏᴏʟs", data="mtools")]]
             but += [[custom.Button.inline("Iɴʟɪɴᴇ", data="linline")]]
             but += [
