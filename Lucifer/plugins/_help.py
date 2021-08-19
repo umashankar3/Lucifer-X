@@ -19,11 +19,9 @@ import os
 from Lucifer import ALIVE_NAME, CMD_HELP, CMD_HNDLR, CMD_LIST
 from Lucifer.LuciferConfig import Config, Var
 
-HELP_PIC = (
-    Var.HELP_PIC
-    if Var.HELP_PIC
-    else "https://telegra.ph/file/78bebb896c10ef6213066.jpg"
-)
+HELP_PIC = os.environ.get("HELP_PIC", None)
+if not HELP_PIC:
+    HELP_PIC = "https://telegra.ph/file/444f1eeaa1c3a50bb232a.jpg"
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Lucifer User"
 CMD_HNDLR = Config.CMD_HNDLR
 CUSTOM_HELP_EMOJI = os.environ.get("CUSTOM_HELP_EMOJI", "⫸")
