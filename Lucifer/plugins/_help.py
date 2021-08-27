@@ -21,7 +21,7 @@ from Lucifer.LuciferConfig import Config, Var
 
 HELP_PIC = os.environ.get("HELP_PIC", None)
 if not HELP_PIC:
-    HELP_PIC = "https://telegra.ph/file/444f1eeaa1c3a50bb232a.jpg"
+    HELP_PIC = Config.HELP_PIC
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Lucifer User"
 CMD_HNDLR = Config.CMD_HNDLR
 CUSTOM_HELP_EMOJI = os.environ.get("CUSTOM_HELP_EMOJI", "⫸")
@@ -75,7 +75,7 @@ async def cmd_list(event):
             else:
                 await event.edit(input_str + " 𝙸𝚂 𝙽𝙾𝚃 𝙰 𝚅𝙰𝙻𝙸𝙳 𝙿𝙻𝚄𝙶𝙸𝙽!!")
         else:
-            help_string = f"""`ℓυcιғεя υв нєℓρ мєиυ ρяσνι∂є∂ ву` [тєαм ℓυcιғεя υв](t.me/Lucifer_support_group) fσя **{DEFAULTUSER}**\nɪғ ɪɴ ᴄᴀsᴇ ʜᴇʟᴘ ᴍᴇɴᴜ ᴅᴏᴇsɴ'ᴛ ᴀᴘᴘᴇᴀʀ Tʜᴀɴ ᴜ ᴄᴀɴ ᴜsᴇ `.help plugin name`\n\n"""
+            help_string = f"""`Lucifer Userbot Help Menu provided ву` [тєαм ℓυcιғεя υв](t.me/Lucifer_support_group) fσr **{DEFAULTUSER}**\nɪғ ɪɴ ᴄᴀsᴇ ʜᴇʟᴘ ᴍᴇɴᴜ ᴅᴏᴇsɴ'ᴛ ᴀᴘᴘᴇᴀʀ Tʜᴀɴ ᴜ ᴄᴀɴ ᴜsᴇ `.help plugin name`\n\n"""
             try:
                 results = await bot.inline_query(  # pylint:disable=E0602
                     tgbotusername, help_string
