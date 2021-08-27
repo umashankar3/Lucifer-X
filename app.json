@@ -36,7 +36,7 @@
   "BOT_PIC": {
    "discription": "telegra.ph link to change your assistance start pic",
    "value": "",
-   "required": true
+   "required": false
   },
   "STRING_SESSION": {
    "description": "Get this value by running python3 telesetup.py locally or (https://replit.com/@simpleboy786/Lucifer?v=1)  online.",
