@@ -28,7 +28,7 @@ from Lucifer import ALIVE_NAME, CMD_HELP, CMD_LIST, CUSTOM_PMPERMIT, bot
 from Lucifer.LuciferConfig import Var
 
 fuk_uid = bot.uid
-HELP_PIC = "https://telegra.ph/file/73373552e9217e010e853.jpg"
+HELP_PIC = Config.HELP_PIC or "https://telegra.ph/file/73373552e9217e010e853.jpg"
 PMPERMIT_PIC = os.environ.get("PMPERMIT_PIC", None)
 TELEPIC = (
     PMPERMIT_PIC
