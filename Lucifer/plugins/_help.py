@@ -19,7 +19,7 @@ import os
 from Lucifer import ALIVE_NAME, CMD_HELP, CMD_HNDLR, CMD_LIST
 from Lucifer.LuciferConfig import Config, Var
 
-HELP_PIC = os.environ.get("HELP_PIC", None)
+HELP_PIC = os.environ.get("HELP_PIC", "https://telegra.ph/file/73373552e9217e010e853.jpg")
 if not HELP_PIC:
     HELP_PIC = if Var.HELP_PIC
     else "https://telegra.ph/file/73373552e9217e010e853.jpg"
