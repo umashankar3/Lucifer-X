@@ -90,7 +90,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             but += [[custom.Button.inline("Iɴʟɪɴᴇ", data="linline")]]
             but += [
                 [
-                    Button.url("🔰 Sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ »»", "t.me/LuciferXsupport"),
+                    Button.url("🔰 Sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ »»", "t.me/Lucifer_support_group"),
                     Button.url("🔰 Uᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ", "t.me/LuciferXupdates"),
                 ]
             ]
@@ -143,7 +143,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
                             "https://heroku.com/deploy?template=https://github.com/kaal0408/Lucifer-X",
                         ),
                     ],
-                    [Button.url("𝚂𝚄𝙿𝙿𝙾𝚁𝚃 𝙲𝙷𝙰𝚃", "https://t.me/LuciferXsupport")],
+                    [Button.url("𝚂𝚄𝙿𝙿𝙾𝚁𝚃 𝙲𝙷𝙰𝚃", "https://t.me/Lucifer_support_group")],
                 ],
             )
         else:
@@ -153,7 +153,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
                 buttons=[
                     [
                         custom.Button.url(
-                            "🚑 Support Group 🚑", "https://t.me/luciferXsupport"
+                            "🚑 Support Group 🚑", "https://t.me/lucifer_support_group"
                         )
                     ],
                     [
@@ -165,7 +165,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
                             "https://heroku.com/deploy?template=https://github.com/kaal0408/Lucifer-X",
                         ),
                     ],
-                    [custom.Button.url("Updates ↗️", "https://t.me/LuciferXSupport")],
+                    [custom.Button.url("Updates ↗️", "https://t.me/Lucifer_Support_group")],
                 ],
                 link_preview=False,
             )
@@ -184,7 +184,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             await event.edit(buttons=buttons)
         else:
             reply_pop_up_alert = (
-                "Please get your own Userbot from @LuciferHelp , and don't use mine!"
+                "Please get your own Userbot from @Lucifer_support_group , and don't use mine!"
             )
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
@@ -195,7 +195,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
         else:
             await event.edit(
-                f"This is the PM Security for {DEFAULTUSER} to keep away spammers and retards.\n\nProtected by [Lucifer](t.me/LuciferXsupport)"
+                f"This is the PM Security for {DEFAULTUSER} to keep away spammers and retards.\n\nProtected by [Lucifer](t.me/Lucifer_support_group)"
             )
 
     @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"menu")))
