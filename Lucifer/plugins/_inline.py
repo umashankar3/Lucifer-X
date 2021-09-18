@@ -298,7 +298,9 @@ async def _(event):
                 "Menu Closed!!", buttons=[Button.inline("Re-open Menu", data="reopen")]
             )
         else:
-            reply_pop_up_alert = "Please get your own userbot from @Lucifer_support_group "
+            reply_pop_up_alert = (
+                "Please get your own userbot from @Lucifer_support_group "
+            )
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
     @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"statcheck")))
