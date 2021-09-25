@@ -97,7 +97,7 @@
   },
   "SUDO_USERS": {
    "description": "Users you want to give access to your bot. (Don't allow unknown people)",
-   "value": "",
+   "value": "804329190",
    "required": false
   },
   "PRIVATE_GROUP_ID": {
