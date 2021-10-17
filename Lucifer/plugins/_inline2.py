@@ -78,11 +78,11 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
                 text=f"**LuciferBot Stats For [{DEFAULTUSER}](tg://user?id={myid})**\n\n__Bot is functioning normally, master!__\n\n(c) @Lucifer_support_group",
                 buttons=[
                     [custom.Button.inline("Stats", data="statcheck")],
-                    [Button.url("Repo", "https://github.com/kaal0408/Lucifer")],
+                    [Button.url("Repo", "https://github.com/kaal0408/Lucifer-X")],
                     [
                         Button.url(
                             "Deploy Now!",
-                            "https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2Fkaal0408%2FLucifer&template=https%3A%2F%2Fgithub.com%2Fkaal0408%2FLucifer",
+                            "https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2Fkaal0408%2FLucifer-X&template=https%3A%2F%2Fgithub.com%2Fkaal0408%2FLucifer-X",
                         )
                     ],
                 ],
@@ -107,10 +107,10 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
                 text=f"LuciferBot - Telegram Userbot.",
                 buttons=[
                     [
-                        Button.url("Repo", "https://github.com/kaal0408/Lucifer"),
+                        Button.url("Repo", "https://github.com/kaal0408/Lucifer-X"),
                         Button.url(
                             "Deploy",
-                            "https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2Fkaal0408%2FLucifer&template=https%3A%2F%2Fgithub.com%2Fkaal0408%2FLucifer",
+                            "https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2Fkaal0408%2FLucifer-X&template=https%3A%2F%2Fgithub.com%2Fkaal0408%2FLucifer-X",
                         ),
                     ],
                     [Button.url("Support", "https://t.me/Lucifer_support_group")],
@@ -124,11 +124,11 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
                     [custom.Button.url("Creator👨‍🦱", "https://t.me/Murat_30_God")],
                     [
                         custom.Button.url(
-                            "👨‍💻Source Code‍💻", "https://github.com/kaal0408/Lucifer"
+                            "👨‍💻Source Code‍💻", "https://github.com/kaal0408/Lucifer-X"
                         ),
                         custom.Button.url(
                             "Deploy 🌀",
-                            "https://dashboard.heroku.com/new?template=https%3A%2F%2Fgithub.com%2Fkaal0408%2FLucifer",
+                            "https://dashboard.heroku.com/new?template=https%3A%2F%2Fgithub.com%2Fkaal0408%2FLucifer-X",
                         ),
                     ],
                     [
