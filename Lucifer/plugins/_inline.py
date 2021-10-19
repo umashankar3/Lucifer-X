@@ -1,14 +1,6 @@
-import asyncio
-import html
 import os
-import re
-from datetime import datetime
-from math import ceil
 
-from telethon import Button, custom, events, functions
-from telethon.tl.functions.users import GetFullUserRequest
-
-from Lucifer import ALIVE_NAME, CMD_HELP, CMD_LIST, CUSTOM_PMPERMIT, bot
+from Lucifer import ALIVE_NAME, CUSTOM_PMPERMIT, bot
 from Lucifer.LuciferConfig import Var
 
 fuk_uid = bot.uid
@@ -57,5 +49,3 @@ elif Var.LOAD_MYBOT == "False":
 CUSTOM_HELP_EMOJI = os.environ.get("CUSTOM_HELP_EMOJI", "💞")
 HELP_ROWS = int(os.environ.get("HELP_ROWS", 7))
 HELP_COLOUMNS = int(os.environ.get("HELP_COLOUMNS", 4))
-
-
