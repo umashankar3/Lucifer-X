@@ -49,7 +49,7 @@ elif Var.LOAD_MYBOT == "False":
 CUSTOM_HELP_EMOJI = os.environ.get("CUSTOM_HELP_EMOJI", "💞")
 HELP_ROWS = int(os.environ.get("HELP_ROWS", 7))
 HELP_COLOUMNS = int(os.environ.get("HELP_COLOUMNS", 4))
-if Config.LOAD_MYBOT == "True":
+if Config.LOAD_PMBOT == "True":
     USER_BOT_NO_WARN = (
         "__knock Knock__👀\nWho is There✨**This is PM SECURITY OF [{}](tg://user?id={})**\nBY lucifer υsєяъ๏т\n\n"
         "{}\n\n"
