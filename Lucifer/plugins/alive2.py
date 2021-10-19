@@ -19,14 +19,14 @@ global fuk
 fuk = borg.uid
 edit_time = 5
 """ =======================CONSTANTS====================== """
-file1 = "https://telegra.ph/file/33f7e8dc3bb38cbe25991.jpg"
+file1 = "https://telegra.ph/file/42a423c45e4146cf8a94c.mp4"
 """ =======================CONSTANTS====================== """
 # ======CONSTANTS=========#
 CUSTOM_ALIVE = Var.CUSTOM_ALIVE if Var.CUSTOM_ALIVE else "ℓυcιғεя Ӽ ʊֆɛʀɮօȶ ɨֆ օռʟɨռɛ!"
 ALV_PIC = (
     Var.ALIVE_PIC
     if Var.ALIVE_PIC
-    else "https://telegra.ph/file/73373552e9217e010e853.jpg"
+    else "https://telegra.ph/file/42a423c45e4146cf8a94c.mp4"
 )
 luciferemoji = Var.CUSTOM_ALIVE_EMOJI if Var.CUSTOM_ALIVE_EMOJI else "**〢**"
 if Config.SUDO_USERS:
