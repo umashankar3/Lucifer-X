@@ -58,4 +58,4 @@ CUSTOM_HELP_EMOJI = os.environ.get("CUSTOM_HELP_EMOJI", "💞")
 HELP_ROWS = int(os.environ.get("HELP_ROWS", 7))
 HELP_COLOUMNS = int(os.environ.get("HELP_COLOUMNS", 4))
 
-if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
+if Var.TG_BOT_USER_NAME_BF_HER is not None and Luciferbot is not None:
