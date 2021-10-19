@@ -46,28 +46,6 @@ elif Var.LOAD_MYBOT == "False":
         )
     )
 
-CUSTOM_HELP_EMOJI = os.environ.get("CUSTOM_HELP_EMOJI", "💞")
-HELP_ROWS = int(os.environ.get("HELP_ROWS", 7))
-HELP_COLOUMNS = int(os.environ.get("HELP_COLOUMNS", 4))
-if var.LOAD_MYBOT == "True":
-    USER_BOT_NO_WARN = (
-        "__knock Knock__👀\nWho is There✨**This is PM SECURITY OF [{}](tg://user?id={})**\nBY lucifer υsєяъ๏т\n\n"
-        "{}\n\n"
-        "Something Important you Have?🤔\nSorry But I can't Approve You 🙂Until My master Says\n"
-        "\n TRY TO **PM** via {} if Something Important"
-        "\nPlease choose why you are here, from the available options:\n\n".format(
-            DEFAULTUSER, myid, MESAG, botname
-        )
-    )
-elif var.LOAD_MYBOT == "False":
-    USER_BOT_NO_WARN = (
-        "**PM Security of [{}](tg://user?id={})**\n\n"
-        "{}\n"
-        "\nPlease choose why you are here, from the available options\n".format(
-            DEFAULTUSER, myid, MESAG
-        )
-    )
-
 CUSTOM_HELP_EMOJI = os.environ.get("CUSTOM_HELP_EMOJI", "✨")
 HELP_ROWS = int(os.environ.get("HELP_ROWS", 5))
 HELP_COLOUMNS = int(os.environ.get("HELP_COLOUMNS", 3))
