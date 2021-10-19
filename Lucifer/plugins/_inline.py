@@ -84,7 +84,9 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
             buttons = paginate_help(0, CMD_LIST, "helpme")
             result = builder.article(
                 "© Lucifer Help",
-                text="{}\ncυяяєηт ρłυgıηs of lucifer υsєяъ๏т: {}".format(query, len(CMD_LIST)),
+                text="{}\ncυяяєηт ρłυgıηs of lucifer υsєяъ๏т: {}".format(
+                    query, len(CMD_LIST)
+                ),
                 buttons=buttons,
                 link_preview=False,
             )
@@ -94,7 +96,11 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                 text=f"**lucifer Stats For [{DEFAULTUSER}](tg://user?id={myid})**\n\n__Bot is functioning normally, master!__\n\n© @Lucifer_support_group ™",
                 buttons=[
                     [custom.Button.inline("Stats📊", data="statcheck")],
-                    [Button.url("Repository ✨", "https://github.com/kaal0408/Lucifer-X")],
+                    [
+                        Button.url(
+                            "Repository ✨", "https://github.com/kaal0408/Lucifer-X"
+                        )
+                    ],
                     [
                         Button.url(
                             "Deploy Lucifer🌌",
@@ -106,40 +112,39 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
         elif event.query.user_id == bot.uid and query == "alive":
             ALIVE = ALV_TXT
             if ALIVE_PIC and ALIVE_PIC.endswith((".jpg", ".png")):
-               result = builder.photo(
-                 ALIVE_PIC,
-                 text = ALIVE,
-              
-                 buttons = [
-                   [
-                     Button.url("Lucifer ᴄʜᴀɴɴᴇʟ", "https://t.me/LuciferXupdates"),
-                     Button.url("Lucifer sᴜᴘᴘ๏ʀᴛ", "https://t.me/Lucifer_support_group")
-                   ],
-                   [
-                     Button.inline("༼•ᴀʙᴏᴜᴛ ᴍʏ  ᴍᴀsᴛᴇʀ•༽", data="master")
-                   ],
-                ],
-              )
-            else:
-              result = builder.document(
-                 text = ALIVE,
-                 title = "Lucifer-X",
-                 file = ALIVE_PIC,
-                 buttons = [
-                   [
-                     Button.url("Lucifer ᴄʜᴀɴɴᴇʟ", "https://t.me/LuciferXupdates"),
-                     Button.url("Lucifer sᴜᴘᴘ๏ʀᴛ", "https://t.me/Lucifer_support_group")
+                result = builder.photo(
+                    ALIVE_PIC,
+                    text=ALIVE,
+                    buttons=[
+                        [
+                            Button.url(
+                                "Lucifer ᴄʜᴀɴɴᴇʟ", "https://t.me/LuciferXupdates"
+                            ),
+                            Button.url(
+                                "Lucifer sᴜᴘᴘ๏ʀᴛ", "https://t.me/Lucifer_support_group"
+                            ),
+                        ],
+                        [Button.inline("༼•ᴀʙᴏᴜᴛ ᴍʏ  ᴍᴀsᴛᴇʀ•༽", data="master")],
                     ],
-                    [
-                      Button.inline("༼•ᴀʙᴏᴜᴛ ᴍʏ  ᴍᴀsᴛᴇʀ•༽", data="master")
+                )
+            else:
+                result = builder.document(
+                    text=ALIVE,
+                    title="Lucifer-X",
+                    file=ALIVE_PIC,
+                    buttons=[
+                        [
+                            Button.url(
+                                "Lucifer ᴄʜᴀɴɴᴇʟ", "https://t.me/LuciferXupdates"
+                            ),
+                            Button.url(
+                                "Lucifer sᴜᴘᴘ๏ʀᴛ", "https://t.me/Lucifer_support_group"
+                            ),
+                        ],
+                        [Button.inline("༼•ᴀʙᴏᴜᴛ ᴍʏ  ᴍᴀsᴛᴇʀ•༽", data="master")],
+                    ],
+                )
 
-                   ],
-
-                ],
-
-              )
-
-                
         elif event.query.user_id == bot.uid and query.startswith("__knock"):
             LUCIFERBT = USER_BOT_NO_WARN.format(DEFAULTUSER, myid, MESAG)
             result = builder.photo(
@@ -148,11 +153,12 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                 buttons=[
                     [
                         custom.Button.inline("To Request 😓", data="req"),
-                        custom.Button.inline("To Ask❔", data="ask")
+                        custom.Button.inline("To Ask❔", data="ask"),
                     ],
                     [
                         custom.Button.inline("For Chatting💬", data="chat"),
-                        custom.Button.inline("Something else😶", data="elsi")],
+                        custom.Button.inline("Something else😶", data="elsi"),
+                    ],
                     [custom.Button.inline("What is this❓", data="wht")],
                 ],
             )
@@ -162,7 +168,9 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                 text=f"lucifer - Telegram Userbot.",
                 buttons=[
                     [
-                        Button.url("Repository ✨", "https://github.com/kaal0408/Lucifer-X"),
+                        Button.url(
+                            "Repository ✨", "https://github.com/kaal0408/Lucifer-X"
+                        ),
                         Button.url(
                             "Deploy Lucifer🌌",
                             "https://heroku.com/deploy?template=https://github.com/kaal0408/Lucifer-X",
@@ -188,7 +196,8 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                     ],
                     [
                         custom.Button.url(
-                            "Updates and Support Group↗️", "https://t.me/Lucifer_support_group"
+                            "Updates and Support Group↗️",
+                            "https://t.me/Lucifer_support_group",
                         )
                     ],
                 ],
@@ -229,13 +238,17 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
             buttons = paginate_help(0, CMD_LIST, "helpme")
             await event.edit("Menu main Opened-Again🍁", buttons=buttons)
         else:
-            reply_pop_up_alert = "Hey you.🙄 Get Your Own ƛsτʀ๏ υsєяъ๏т Don't touch mine🙂!"
+            reply_pop_up_alert = (
+                "Hey you.🙄 Get Your Own ƛsτʀ๏ υsєяъ๏т Don't touch mine🙂!"
+            )
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
     @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"req")))
     async def on_pm_click(event):
         if event.query.user_id == bot.uid:
-            reply_pop_up_alert = "Is it joke🙄You wanna to request your self\nthis is not for you"
+            reply_pop_up_alert = (
+                "Is it joke🙄You wanna to request your self\nthis is not for you"
+            )
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
         else:
             await event.edit(
@@ -253,7 +266,9 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
     async def on_pm_click(event):
         event.query.user_id
         if event.query.user_id == bot.uid:
-            reply_pop_up_alert = "You wanna to chat your self😆\nThis is not for you Master"
+            reply_pop_up_alert = (
+                "You wanna to chat your self😆\nThis is not for you Master"
+            )
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
         else:
             await event.edit(
@@ -270,7 +285,9 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
     @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"ask")))
     async def on_pm_click(event):
         if event.query.user_id == bot.uid:
-            reply_pop_up_alert = "😆 What are you going to ask yourself\n This is not for you Master"
+            reply_pop_up_alert = (
+                "😆 What are you going to ask yourself\n This is not for you Master"
+            )
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
         else:
             await event.edit(
@@ -312,14 +329,16 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                 "Menu Closed!!🍂", buttons=[Button.inline("Re-open Menu", data="reopen")]
             )
         else:
-            reply_pop_up_alert = "Hey you.🙄 Get Your Own Lucifer υsєяъ๏т Don't touch mine🙂 "
+            reply_pop_up_alert = (
+                "Hey you.🙄 Get Your Own Lucifer υsєяъ๏т Don't touch mine🙂 "
+            )
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
     @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"statcheck")))
     async def rip(event):
         text = astrostats
         await event.answer(text, alert=True)
-        
+
     @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"master")))
     async def ok(event):
         text = masterinfo
@@ -339,7 +358,9 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
             # https://t.me/TelethonChat/115200
             await event.edit(buttons=buttons)
         else:
-            reply_pop_up_alert = "Hey you.🙄 Get Your Own Lucifer υsєяъ๏т Don't touch mine🙂!"
+            reply_pop_up_alert = (
+                "Hey you.🙄 Get Your Own Lucifer υsєяъ๏т Don't touch mine🙂!"
+            )
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
     @tgbot.on(
@@ -384,7 +405,9 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
             else:
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
         else:
-            reply_pop_up_alert = "Hey you.🙄 Create Your Own Lucifer υsєяъ๏т Don't touch mine😒"
+            reply_pop_up_alert = (
+                "Hey you.🙄 Create Your Own Lucifer υsєяъ๏т Don't touch mine😒"
+            )
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
 
@@ -398,9 +421,7 @@ def paginate_help(page_number, loaded_plugins, prefix):
             helpable_plugins.append(p)
     helpable_plugins = sorted(helpable_plugins)
     modules = [
-        custom.Button.inline(
-            "{} {}".format(tele, x), data="us_plugin_{}".format(x)
-        )
+        custom.Button.inline("{} {}".format(tele, x), data="us_plugin_{}".format(x))
         for x in helpable_plugins
     ]
     pairs = list(zip(modules[::number_of_cols], modules[1::number_of_cols]))
