@@ -7,7 +7,7 @@ from pathlib import Path
 from telethon import events
 
 from Lucifer import CMD_LIST, LOAD_PLUG, bot
-from Lucifer.Config import Var
+from Lucifer.LuciferConfig import Var
 from Lucifer.thunderconfig import Config
 
 sedprint = logging.getLogger("PLUGINS")
