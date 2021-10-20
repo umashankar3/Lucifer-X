@@ -41,7 +41,7 @@ else:
         print("Initiating Inline Bot")
         # ForTheGreatrerGood of beautification
         bot.tgbot = TelegramClient(
-            "TG_BOT_TOKEN", api_id=Var.APP_ID, api_hash=Var.API_HASH
+            "TG_BOT_TOKEN_BF_HER", api_id=Var.APP_ID, api_hash=Var.API_HASH
         ).start(bot_token=Var.TG_BOT_TOKEN_BF_HER)
         print("Initialisation finished, no errors")
         print("Starting Userbot")
