@@ -3,7 +3,7 @@ import re
 from math import ceil
 
 from telethon import Button, custom, events, functions
-from Var import Var
+from var import Var
 
 from Lucifer import ALIVE_NAME, CMD_HELP, CMD_LIST, bot
 from Lucifer.thunderconfig import Config
