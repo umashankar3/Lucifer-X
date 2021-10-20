@@ -1,6 +1,5 @@
 import glob
 import logging
-import os
 from pathlib import Path
 from sys import argv
 
@@ -10,12 +9,13 @@ from telethon import TelegramClient
 from Lucifer import CMD_HNDLR, bot
 from Lucifer.LuciferConfig import Var
 from Lucifer.Luciferconfig import Config
-from Lucifer.utils import load_assistant, load_module, start_assistant
+from Lucifer.utils import load_assistant, load_module
 
 TELE = Var.PRIVATE_GROUP_ID
 BOTNAME = Var.TG_BOT_USER_NAME_BF_HER
 LOAD_MYBOT = Var.LOAD_MYBOT
 sed = logging.getLogger("Black Lightning")
+
 
 async def add_bot(bot_token):
     await bot.start(bot_token)
@@ -57,8 +57,8 @@ for name in files:
         path1 = Path(f.name)
         shortname = path1.stem
         try:
-            
-         load_module(shortname.replace(".py", ""))
+
+            load_module(shortname.replace(".py", ""))
         except Exception:
             pass
 print("Lucifer  has been deployed! ")
@@ -74,16 +74,15 @@ if Config.ENABLE_ASSISTANTBOT == "ENABLE":
             path1 = Path(f.name)
             shortname = path1.stem
             try:
-                
-            
-             load_assistant(shortname.replace(".py", ""))
+
+                load_assistant(shortname.replace(".py", ""))
             except Exception:
                 pass
     sed.info("Lucifer Has Been Deployed Successfully !")
     sed.info("╔════❰ Ⲃⲟⲧ Ⲓⲛϝⲟʀⲙⲁⲧⲓⲟⲛ ❱═❍⊱❁۪۪")
     sed.info("║┣⪼ Ⲟⲱⲛⲉʀ - Ƒմʂʂìօղ ᴜꜱᴇʀ ")
     sed.info("║┣⪼ Ⲋⲧⲁⲧυⲋ - Ⲟⲛⳑⲓⲛⲉ")
-    sed.info("║┣⪼ Ⲃⲟⲧ Ⳳⲉʀⲋⲓⲟⲛ - 1.2.0")   
+    sed.info("║┣⪼ Ⲃⲟⲧ Ⳳⲉʀⲋⲓⲟⲛ - 1.2.0")
     sed.info("║┣⪼ Ⳙⲣⲧⲓⲙⲉ - 00h:00m:4s ")
     sed.info("║┣⪼ Ⲃⲟⲧ Ⲣⲓⲛⳋ - 0.006")
     sed.info("║┣⪼ Ⲣⲩⲧⲏⲟⲛ - 3.9.2")
@@ -98,7 +97,4 @@ else:
 if len(argv) not in (1, 3, 4):
     bot.disconnect()
 else:
-    bot.run_until_disconnected()               
-                
-                
-               
+    bot.run_until_disconnected()
