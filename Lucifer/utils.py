@@ -169,7 +169,7 @@ def load_module(shortname):
     else:
         import importlib
 
-        import userbot.utils
+        import Lucifer.utils
 
         path = Path(f"Lucifer/plugins/{shortname}.py")
         name = "Lucifer.plugins.{}".format(shortname)
@@ -360,7 +360,7 @@ import traceback
 from time import gmtime, strftime
 
 from telethon import events
-from userbot import bot
+from Lucifer import bot
 
 
 def register(**args):
