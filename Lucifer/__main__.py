@@ -14,7 +14,7 @@ from Lucifer.utils import load_assistant, load_module
 TELE = Var.PRIVATE_GROUP_ID
 BOTNAME = Var.TG_BOT_USER_NAME_BF_HER
 LOAD_MYBOT = Var.LOAD_MYBOT
-sed = logging.getLogger("Black Lightning")
+sed = logging.getLogger("Lucifer UserBot")
 
 
 async def add_bot(bot_token):
@@ -67,7 +67,7 @@ print("Setting up Lucifer")
 
 
 if Config.ENABLE_ASSISTANTBOT == "ENABLE":
-    path = "userbot/plugins/assistant/*.py"
+    path = "Lucifer/plugins/assistant/*.py"
     files = glob.glob(path)
     for name in files:
         with open(name) as f:
