@@ -8,7 +8,7 @@ from telethon import TelegramClient
 
 from Lucifer import CMD_HNDLR, bot
 from Lucifer.LuciferConfig import Var
-from Lucifer.Luciferconfig import Config
+from Lucifer.thunderconfig import Config
 from Lucifer.utils import load_assistant, load_module
 
 TELE = Var.PRIVATE_GROUP_ID
