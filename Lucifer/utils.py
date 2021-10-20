@@ -1,4 +1,3 @@
-
 import functools
 import inspect
 import logging
@@ -84,6 +83,7 @@ def command(**args):
 
         return decorator
 
+
 def lightning_command(**args):
     args["func"] = lambda e: e.via_bot_id is None
 
@@ -96,30 +96,26 @@ def lightning_command(**args):
     else:
         pattern = args.get("pattern", None)
         allow_sudo = args.get("allow_sudo", None)
-        allow_edited_updates = args.get('allow_edited_updates', False)
+        allow_edited_updates = args.get("allow_edited_updates", False)
         args["incoming"] = args.get("incoming", False)
         args["outgoing"] = True
         if bool(args["incoming"]):
             args["outgoing"] = False
 
         try:
-            if pattern is not None and not pattern.startswith('(?i)'):
-                args['pattern'] = '(?i)' + pattern
+            if pattern is not None and not pattern.startswith("(?i)"):
+                args["pattern"] = "(?i)" + pattern
         except BaseException:
             pass
 
-        reg = re.compile('(.*)')
+        reg = re.compile("(.*)")
         if pattern is not None:
             try:
                 cmd = re.search(reg, pattern)
                 try:
-                    cmd = cmd.group(1).replace(
-                        "$",
-                        "").replace(
-                        "\\",
-                        "").replace(
-                        "^",
-                        "")
+                    cmd = (
+                        cmd.group(1).replace("$", "").replace("\\", "").replace("^", "")
+                    )
                 except BaseException:
                     pass
 
@@ -141,7 +137,7 @@ def lightning_command(**args):
             pass
 
         if "allow_edited_updates" in args:
-            del args['allow_edited_updates']
+            del args["allow_edited_updates"]
 
         def decorator(func):
             if allow_edited_updates:
@@ -287,6 +283,7 @@ def lightning_cmd(pattern=None, command=None, **args):
 
     return events.NewMessage(**args)
 
+
 def admin_cmd(pattern=None, command=None, **args):
     args["func"] = lambda e: e.via_bot_id is None
     stack = inspect.stack()
@@ -351,6 +348,7 @@ def admin_cmd(pattern=None, command=None, **args):
 
     return events.NewMessage(**args)
 
+
 """ Userbot module for managing events.
  One of the main components of the userbot. """
 
@@ -362,12 +360,11 @@ import traceback
 from time import gmtime, strftime
 
 from telethon import events
-
 from userbot import bot
 
 
 def register(**args):
-    """ Register a new event. """
+    """Register a new event."""
     args["func"] = lambda e: e.via_bot_id is None
 
     stack = inspect.stack()
