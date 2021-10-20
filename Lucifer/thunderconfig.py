@@ -11,7 +11,9 @@ class Config(object):
     API_HASH = os.environ.get("API_HASH", None)
     STRING_SESSION = os.environ.get("STRING_SESSION", None)
     DB_URI = os.environ.get("DATABASE_URL", None)
-    TEMP_DOWNLOAD_DIRECTORY = os.environ.get("TEMP_DOWNLOAD_DIRECTORY", "./userbot/DOWNLOADS/")
+    TEMP_DOWNLOAD_DIRECTORY = os.environ.get(
+        "TEMP_DOWNLOAD_DIRECTORY", "./userbot/DOWNLOADS/"
+    )
     # This is required for the modules involving the file system.
     TMP_DOWNLOAD_DIRECTORY = os.environ.get("TMP_DOWNLOAD_DIRECTORY", "./DOWNLOADS/")
     MAX_ANTI_FLOOD_MESSAGES = 10
@@ -115,7 +117,9 @@ class Config(object):
     ANTI_SPAMINC_TOKEN = os.environ.get("ANTI_SPAMINC_TOKEN", None)
     SCREEN_SHOT_LAYER_ACCESS_KEY = os.environ.get("SCREEN_SHOT_LAYER_ACCESS_KEY", None)
     ASSISTANT_LOG = int(os.environ.get("ASSISTANT_LOG", False))
-    PRIVATE_GROUP_BOT_API_ID = os.environ.get("PRIVATE_GROUP_BOT_API_ID", f"{COMBINED_GROUP_ID}")
+    PRIVATE_GROUP_BOT_API_ID = os.environ.get(
+        "PRIVATE_GROUP_BOT_API_ID", f"{COMBINED_GROUP_ID}"
+    )
     if PRIVATE_GROUP_BOT_API_ID:
         PRIVATE_GROUP_BOT_API_ID = int(PRIVATE_GROUP_BOT_API_ID)
     AUTH_TOKEN_DATA = os.environ.get("AUTH_TOKEN_DATA", None)
