@@ -50,7 +50,7 @@ else:
     else:
         bot.start()
 
-path = "userbot/plugins/*.py"
+path = "Lucifer/plugins/*.py"
 files = glob.glob(path)
 for name in files:
     with open(name) as f:
