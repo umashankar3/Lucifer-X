@@ -2,16 +2,16 @@ import asyncio
 import html
 import os
 import re
-from math import ceil
-import time
 from datetime import datetime
+from math import ceil
 
 from telethon import Button, custom, events, functions
-
 from telethon.tl.functions.users import GetFullUserRequest
-from . import *
+
 from Lucifer import ALIVE_NAME, CMD_HELP, CMD_LIST, CUSTOM_PMPERMIT, bot
 from Lucifer.LuciferConfig import Var
+
+from . import *
 
 fuk_uid = bot.uid
 HELP_PIC = "https://telegra.ph/file/73373552e9217e010e853.jpg"
@@ -74,7 +74,12 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             but += [[Button.url("Mʏ ᴍᴀsᴛᴇʀ »»", "tg://user?id={fuk_uid})")]]
             but += [[custom.Button.inline("Mᴀsᴛᴇʀ•ᴛᴏᴏʟs", data="mtools")]]
             but += [[custom.Button.inline("Iɴʟɪɴᴇ", data="linline")]]
-            but += [[Button.url("🔰 Sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ »»", "t.me/Lucifer_support_group"), Button.url("🔰 Uᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ", "t.me/LuciferXupdates")]]
+            but += [
+                [
+                    Button.url("🔰 Sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ »»", "t.me/Lucifer_support_group"),
+                    Button.url("🔰 Uᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ", "t.me/LuciferXupdates"),
+                ]
+            ]
             result = builder.photo(
                 file=HELP_PIC,
                 text="{}\n𝙲𝚄𝚁𝚁𝙴𝙽𝚃𝙻𝚈 𝙻𝙾𝙰𝙳𝙴𝙳 𝙿𝙻𝚄𝙶𝙸𝙽𝚂: {}".format(query, len(CMD_LIST)),
@@ -116,7 +121,10 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
                 text=f"Lucifer - Telegram Userbot.",
                 buttons=[
                     [
-                        Button.url("L U C I F E R 𝚁𝙴𝙿𝙾", "https://github.com/kaal0408/Lucifer-X"),
+                        Button.url(
+                            "L U C I F E R 𝚁𝙴𝙿𝙾",
+                            "https://github.com/kaal0408/Lucifer-X",
+                        ),
                         Button.url(
                             "𝙳𝙴𝙿𝙻𝙾𝚈 𝙽𝙾𝚆",
                             "https://heroku.com/deploy?template=https://github.com/kaal0408/Lucifer-X",
@@ -144,7 +152,11 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
                             "https://heroku.com/deploy?template=https://github.com/kaal0408/Lucifer-X",
                         ),
                     ],
-                    [custom.Button.url("Updates ↗️", "https://t.me/Lucifer_support_group")],
+                    [
+                        custom.Button.url(
+                            "Updates ↗️", "https://t.me/Lucifer_support_group"
+                        )
+                    ],
                 ],
                 link_preview=False,
             )
@@ -162,9 +174,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             # https://t.me/TelethonChat/115200
             await event.edit(buttons=buttons)
         else:
-            reply_pop_up_alert = (
-                "Please get your own Userbot from @Lucifer_support_group , and don't use mine!"
-            )
+            reply_pop_up_alert = "Please get your own Userbot from @Lucifer_support_group , and don't use mine!"
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
     @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"pmclick")))
@@ -186,6 +196,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             reply_pop_up_alert = "This bot ain't for u!!"
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
+
 @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"ping")))
 async def _(event):
     start = datetime.now()
@@ -193,7 +204,7 @@ async def _(event):
     ms = (end - start).microseconds
     reply_pop_up_alert = f"ʙᴏᴛ•Pɪɴɢ = {ms} microseconds"
     await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
-            
+
     @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"req")))
     async def on_pm_click(event):
         if event.query.user_id == bot.uid:
@@ -274,7 +285,9 @@ async def _(event):
                 "Menu Closed!!", buttons=[Button.inline("Re-open Menu", data="reopen")]
             )
         else:
-            reply_pop_up_alert = "Please get your own userbot from @Lucifer_support_group "
+            reply_pop_up_alert = (
+                "Please get your own userbot from @Lucifer_support_group "
+            )
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
     @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"statcheck")))
@@ -298,6 +311,7 @@ async def _(event):
         else:
             reply_pop_up_alert = "Please get your own Userbot, and don't use mine!"
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
+
     @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"reopen")))
     async def megic(event):
         if event.query.user_id == bot.uid:
@@ -306,6 +320,7 @@ async def _(event):
         else:
             reply_pop_up_alert = "This bot ain't for u!!"
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
+
     @tgbot.on(
         events.callbackquery.CallbackQuery(  # pylint:disable=E0602
             data=re.compile(b"us_plugin_(.*)")
