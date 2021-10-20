@@ -180,9 +180,9 @@ def load_module(shortname):
         mod.Var = Var
         mod.command = command
         mod.logger = logging.getLogger(shortname)
-        # support for uniborg
-        sys.modules["uniborg.util"] = userbot.utils
-        mod.Config = Config
+        # support for Lucifer
+        sys.modules["Lucifer.util"] = Lucifer.utils
+        mod.Config = LuciferConfig
         mod.borg = bot
         mod.userbot = bot
         # auto-load
@@ -209,7 +209,7 @@ def remove_plugin(shortname):
             del LOAD_PLUG[shortname]
 
         except:
-            name = f"userbot.plugins.{shortname}"
+            name = f"Lucifer.plugins.{shortname}"
 
             for i in reversed(range(len(bot._event_builders))):
                 ev, cb = bot._event_builders[i]
