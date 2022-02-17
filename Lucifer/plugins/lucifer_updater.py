@@ -25,7 +25,7 @@ requirements_path = path.join(
 HEROKU_API_KEY = Var.HEROKU_API_KEY
 HEROKU_APP_NAME = Var.HEROKU_APP_NAME
 GIT_REPO_NAME = "Lucifer-X"
-UPSTREAM_REPO_URL = "https://github.com/kaal0408/Lucifer-X"
+UPSTREAM_REPO_URL = "https://github.com/umashankar3/Lucifer-X"
 
 xxxx = CMD_HNDLR if CMD_HNDLR else "."
 
