@@ -1,7 +1,7 @@
 {
- "name": "Lucifer 🇮🇳 UserBot",
- "description": "An advanced Telethon Userbot, from @Lucifer_support_group",
- "logo": "https://telegra.ph/file/73373552e9217e010e853.jpg",
+ "name": "UMASHANKAR 🇮🇳 UserBot",
+ "description": "An advanced Telethon Userbot, from @shayari_jok",
+ "logo": "https://te.legra.ph/file/6676e5fd9f46eccd2061f.jpg",
  "keywords": [
   "telegram",
   "userbot",
@@ -9,9 +9,9 @@
   "modular",
   "productivity"
  ],
- "repository": "https://github.com/kaal0408/Lucifer-X",
- "website": "https://kaal0408.gitbook.io/Lucifer/",
- "success_url": "https://t.me/LuciferXsupport",
+ "repository": "https://github.com/Umashankar3/Lucifer-X",
+ "website": "https://t.me/shayari_jok",
+ "success_url": "https://t.me/umashankar31",
  "stack": "container",
  "env": {
   "ENV": {
@@ -35,16 +35,16 @@
   },
   "BOT_PIC": {
    "discription": "telegra.ph link to change your assistance start pic",
-   "value": "",
+   "value": "https://te.legra.ph/file/6676e5fd9f46eccd2061f.jpg",
    "required": false
   },
   "STRING_SESSION": {
-   "description": "Get this value by running python3 telesetup.py locally or (https://replit.com/@simpleboy786/Lucifer?v=1)  online.",
+   "description": "Get this value by running Telethon or (https://t.me/SESSION_STRENG_bot)  online.",
    "value": ""
   },
   "CUSTOM_ALIVE_EMOJI": {
    "description": "custom alive emoji",
-   "value": ""
+   "value": "💝"
   },
   "CUSTOM_PMPERMIT": {
    "description": "The message that appears when someone PM's you. Leave it as such for default message.",
@@ -57,16 +57,16 @@
   },
    "CMD_HNDLR": {
    "description": "Used to invoke commands, leave blank for default, (dot)",
-   "value": ".",
+   "value": "/",
    "required": false
   },  
    "SUDO_HNDLR": {
    "description": "Used to invoke sudo commands, leave blank for default",
-   "value": ".",
+   "value": "/",
    "required": false
   },  
   "GIT_REPO_NAME": {
-   "description": "Your repo name Example: kaal0408/Lucifer, but GITHUB_ACCESS_TOKEN must be setup first.",
+   "description": "Your repo name Example: Umashankar3/Lucifer, but GITHUB_ACCESS_TOKEN must be setup first.",
    "value": "",
    "required": false
   },
@@ -97,7 +97,7 @@
   },
   "SUDO_USERS": {
    "description": "Users you want to give access to your bot. (Don't allow unknown people)",
-   "value": "804329190",
+   "value": "1788262293",
    "required": false
   },
   "PRIVATE_GROUP_ID": {
@@ -117,12 +117,12 @@
   },
   "TG_BOT_USER_NAME_BF_HER": {
    "description": "Needed for inline buttons maker. Make a bot at [BotFather](http://telegram.dog/BotFather) and get the username of your bot. Needed for .help to work.",
-   "value": "",
+   "value": "TENA_ROBOT",
    "required": true
   },
   "ALIVE_NAME": {
    "description": "Your Telegram Profile name. (not @username). ",
-   "value": "",
+   "value": "umashankar31",
    "required": false
   },  
   "MAX_SPAM": {
