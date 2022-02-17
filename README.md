@@ -1,10 +1,10 @@
-<h2 align="center"><b>OwNeR <a href="https://telegram.dog/Murat_30_God ">『 Manjeet』and『MD NOOR』</a></b></h2>
+<h2 align="center"><b>OwNeR <a href="https://telegram.dog/Murat_30_God ">『 UMASHANKAR YADAV』</a></b></h2>
 # Lucifer-X
 > Telethon based userbot (•~•)
 <h1 align="center">⚡Lucifer-X⚡</h1>
 
 
-[![Lucifer-X logo](https://telegra.ph/file/78bebb896c10ef6213066.jpg)](https://t.me/LuciferXsupport)
+[![Lucifer-X logo](https://te.legra.ph/file/6676e5fd9f46eccd2061f.jpg)](https://t.me/shayari_jok)
 
 <h2 align="center">USERBOT</h2>
 
@@ -22,15 +22,15 @@
 
  <h1 align="center">💫String Session💫</h1>
 
- [![Run on Repl.it](https://repl.it/badge/github/kaal0408/Lucifer-X&theme=midnight-purple)](https://replit.com/@Lightyagami788/LUCIFER-REPL#main.py)
+ [![Run on TELETHON.it](https://t.me/SESSION_STRENG_bot)](https://t.me/SESSION_STRENG_bot)
 
 
 
 <h3 align="center"> ✨OFFICIAL SUPPORT✨</h3>
 
-<a href="https://t.me/LuciferXUpdates"><img src="https://img.shields.io/badge/Join-Support%20Channel-red.svg?style=for-the-badge&logo=Telegram"></a>
+<a href="https://t.me/shayari_jok"><img src="https://img.shields.io/badge/Join-Support%20Channel-red.svg?style=for-the-badge&logo=Telegram"></a>
 
-<a href="https://t.me/Lucifer_support_group"><img src="https://img.shields.io/badge/Join-Support%20Group-red.svg?style=for-the-badge&logo=Telegram"></a>
+<a href="https://t.me/TENA_ROBOT"><img src="https://img.shields.io/badge/Join-Support%20Group-red.svg?style=for-the-badge&logo=Telegram"></a>
 
 
 
