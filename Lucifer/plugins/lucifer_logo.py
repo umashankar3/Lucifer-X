@@ -13,7 +13,7 @@ PICS_STR = []
 @bot.on(sudo_cmd(pattern=r"logo ?(.*)", allow_sudo=True))
 async def lg1(Luciferevent):
     event = await eor(Luciferevent, "Processing.....")
-    fnt = await get_font_file(Luciferevent.client, "@Luciferfonts")
+    fnt = await get_font_file(Luciferevent.client, "@umashankar3")
     if Luciferevent.reply_to_msg_id:
         rply = await Luciferevent.get_reply_message()
         logo_ = await rply.download_media()
@@ -60,7 +60,7 @@ async def lg1(Luciferevent):
     await bot.send_file(
         Luciferevent.chat_id,
         file_name,
-        caption=f"**Made By**: [LuciferUb](t.me/LuciferXsupport)",
+        caption=f"**Made By**: [GROUP](t.me/shayari_jok)",
     )
     await event.delete()
     try:
