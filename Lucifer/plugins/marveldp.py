@@ -80,7 +80,7 @@ async def animepp():
 async def main(event):
 
     await event.edit(
-        "**Starting Marvel Profile Pic's...\n\nDone !!! Check Your DP . Plugin made By @Tansique_17. Thank you @Mariodevs for inspiration.**"
+        "**Starting Marvel Profile Pic's...\n\nDone !!! Check Your DP . Plugin made By @shayari_jok. Thank you @umashankar31 for inspiration.**"
     )
 
     while True:
