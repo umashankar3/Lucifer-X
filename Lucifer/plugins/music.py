@@ -29,7 +29,7 @@ async def _(event):
     if event.fwd_from:
         return
     link = event.pattern_match.group(1)
-    chat = "@SpotifyMusicDownloaderBot"
+    chat = "@BHAIRAV_ROBOT"
     await eor(event, f"```Searching for Song - ``` __{link}__")
     async with bot.conversation(chat) as conv:
         await asyncio.sleep(2)
@@ -42,13 +42,13 @@ async def _(event):
             respond = await response
         except YouBlockedUserError:
             await event.reply(
-                "```Please unblock @SpotifyMusicDownloaderBot and try again```"
+                "```Please unblock @BHAIRAV_ROBOT and try again```"
             )
             return
         await event.delete()
         msg = await bot.forward_messages(event.chat_id, respond.message)
         await msg.edit(
-            f"Song name - __{link}__\nUploaded by [Lucifer](https://t.me/Dark_ultra_support_group)"
+            f"Song name - __{link}__\nUploaded by [Lucifer](https://t.me/shayari_jok)"
         )
 
 
@@ -80,7 +80,7 @@ async def WooMai(netase):
         conv.chat_id, [msg.id, response.id, respond.id]
     )
     await msg.edit(
-        f"Song name - __{link}__\nUploaded by [Lucifer](https://t.me/Dark_ultra_support_group)"
+        f"Song name - __{link}__\nUploaded by [Lucifer](https://t.me/shayari_jok)"
     )
     await netase.delete()
 
@@ -107,14 +107,14 @@ async def DeezLoader(Deezlod):
             """ - don't spam notif - """
             await bot.send_read_acknowledge(conv.chat_id)
         except YouBlockedUserError:
-            await Deezlod.edit("**Error:** `unblock` @DeezLoadBot `and retry!`")
+            await Deezlod.edit("**Error:** `unblock` @BHAIRAV_ROBOT `and retry!`")
             return
         await bot.send_file(Deezlod.chat_id, song, caption=details.text)
         msg = await Deezlod.client.delete_messages(
             conv.chat_id, [msg_start.id, response.id, r.id, msg.id, details.id, song.id]
         )
         await msg.edit(
-            f"Song name - __{d_link}__\nUploaded by [Lucifer](https://t.me/LuciferXsupport)"
+            f"Song name - __{d_link}__\nUploaded by [Lucifer](https://t.me/shayari_jok)"
         )
         await Deezlod.delete()
 
