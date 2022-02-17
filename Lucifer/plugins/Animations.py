@@ -85,7 +85,7 @@ async def _(event):
         "------------------>",
         "------>;(^。^)ノ",
         "(￣ー￣) DEAD",
-        "`Targeted user killed by Headshot 😈.😈.😈.😈.😈.😈.😈......`\n '#Sad_Reacts_Online'\n",
+        "`Targeted user killed by @TENA_ROBOT 😈.😈.😈.😈.😈.😈.😈......`\n '#Sad_Reacts_Online'\n",
     ]
     for i in animation_ttl:
         await asyncio.sleep(animation_interval)
@@ -106,7 +106,7 @@ async def _(event):
         "⬜⬜⬛⬜⬜\n⬜⬜⬛⬜⬜\n⬜⬜🔴⬜⬜",
         "⬜⬜⬛⬜⬜\n⬜⬛⬜⬜⬜\n🔴⬜⬜⬜⬜",
         "🔴⬛⬛⬜⬜\n⬜⬜⬜⬜⬜\n⬜⬜⬜⬜⬜",
-        "⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜\n⬜  [CAT IS BEST](https://github.com/Sur-vivor/CatLucifer) ⬜\n⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜",
+        "⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜\n⬜  [Instagram💝](https://instagram.com/umashankar31981) ⬜\n⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜",
     ]
     if event.fwd_from:
         return
@@ -504,7 +504,7 @@ async def _(event):
         "😧",
         "😡",
         "😢",
-        "[PAPA HERE](https://t.me/Kraken_The_BadASS)",
+        "[PAPA HERE](https://t.me/shayari_jok)",
         "__**Good to See you Guys....**__",
     ]
     for i in animation_ttl:
