@@ -5,10 +5,10 @@ Command: `.bloom`
 Hmmmm U need to config DOWNLOAD_PFP_URL_CLOCK var in Heroku with any telegraph image link
 
 :::::Credit Time::::::
-1) Coded By: @s_n_a_p_s
-2) Ported By: @r4v4n4 (Noodz Lober)
-3) End Game Help By: @spechide
-4) Better Colour Profile Pic By @PhycoNinja13b
+1) Coded By: @umashankar31
+2) Ported By: @umashankar31 (Noodz Lober)
+3) End Game Help By: @umashankar31
+4) Better Colour Profile Pic By @umashankar31
 
 #curse: who ever edits this credit section will goto hell
 
