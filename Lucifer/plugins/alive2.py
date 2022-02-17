@@ -19,14 +19,14 @@ global fuk
 fuk = borg.uid
 edit_time = 5
 """ =======================CONSTANTS====================== """
-file1 = "https://telegra.ph/file/42a423c45e4146cf8a94c.mp4"
+file1 = "https://t.me/shayari_jok/52766"
 """ =======================CONSTANTS====================== """
 # ======CONSTANTS=========#
 CUSTOM_ALIVE = Var.CUSTOM_ALIVE if Var.CUSTOM_ALIVE else "ℓυcιғεя Ӽ ʊֆɛʀɮօȶ ɨֆ օռʟɨռɛ!"
 ALV_PIC = (
     Var.ALIVE_PIC
     if Var.ALIVE_PIC
-    else "https://telegra.ph/file/42a423c45e4146cf8a94c.mp4"
+    else "https://t.me/shayari_jok/52766"
 )
 luciferemoji = Var.CUSTOM_ALIVE_EMOJI if Var.CUSTOM_ALIVE_EMOJI else "**〢**"
 if Config.SUDO_USERS:
@@ -50,10 +50,10 @@ async def hmm(yes):
     pm_caption += f"{luciferemoji} **LUCIFER 𝙓 𝙑𝙀𝙍𝙎𝙄𝙊𝙉**: `{luciferver}`\n"
     pm_caption += f"{luciferemoji} **𝙏𝙀𝙇𝙀𝙏𝙃𝙊𝙉 𝙑𝙀𝙍𝙎𝙄𝙊𝙉** ☞ {version.__version__}\n"
     pm_caption += (
-        f"{luciferemoji} **𝙎𝙐𝙋𝙋𝙊𝙍𝙏 𝘾𝙃𝘼𝙉𝙉𝙀𝙇** ☞ [ᴊᴏɪɴ](https://t.me/LuciferXUpdates)\n"
+        f"{luciferemoji} **𝙎𝙐𝙋𝙋𝙊𝙍𝙏 𝘾𝙃𝘼𝙉𝙉𝙀𝙇** ☞ [UMASHANKAR YADAV](https://t.me/UMASHANKAR31)\n"
     )
-    pm_caption += f"{luciferemoji} **𝙇𝙄𝘾𝙀𝙉𝙎𝙀**  ☞ [TEAM LUCIFER 𝚄𝙱](https://github.com/kaal0408/Lucifer-X)\n"
-    pm_caption += f"{luciferemoji} **𝘾𝙊𝙋𝙔𝙍𝙄𝙂𝙃𝙏 𝘽𝙔** ☞ [LUCIFER 𝚄𝙱](https://github.com/kaal0408/Lucifer-X)\n\n"
+    pm_caption += f"{luciferemoji} **𝙇𝙄𝘾𝙀𝙉𝙎𝙀**  ☞ [FACEBOOK](https://www.facebook.com/Umashankar31981)\n"
+    pm_caption += f"{luciferemoji} **𝘾𝙊𝙋𝙔𝙍𝙄𝙂𝙃𝙏 𝘽𝙔** ☞ [INSTAGRAM](https://instagram.com/umashankar31981)\n\n"
     pm_caption += f"{luciferemoji} **LUCIFER 𝙐𝙋𝙏𝙄𝙈𝙀** ☞ {uptime}\n\n"
     pm_caption += (
         f"{luciferemoji} **𝙈𝙔 𝙋𝙀𝙍𝙊 𝙈𝘼𝙎𝙏𝙀𝙍** ☞ [{DEFAULTUSER}](tg://user?id={fuk})\n"
