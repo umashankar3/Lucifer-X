@@ -20,7 +20,7 @@ from telethon.errors.rpcerrorlist import YouBlockedUserError
 
 from Lucifer import CMD_HELP
 
-bot = "@MissRose_bot"
+bot = "@Bhairav_Robot"
 
 
 @Lucifer.on(admin_cmd(pattern="fstat ?(.*)"))
@@ -61,7 +61,7 @@ async def _(event):
                     await borg.send_message(event.chat_id, audio.text)
                 await event.delete()
             except YouBlockedUserError:
-                await ok.edit("**Error**\n `Unblock` @MissRose_Bot `and try again!")
+                await ok.edit("**Error**\n `Unblock` @Bhairav_Robot `and try again!")
 
 
 @Lucifer.on(admin_cmd(pattern="fedinfo ?(.*)"))
@@ -79,7 +79,7 @@ async def _(event):
             audio = await conv.get_response()
             await ok.edit(audio.text + "\n\nFedInfo Excracted by Lucifer")
         except YouBlockedUserError:
-            await ok.edit("**Error**\n `Unblock` @MissRose_Bot `and try again!")
+            await ok.edit("**Error**\n `Unblock` @Bhairav_Robot `and try again!")
 
 
 CMD_HELP.update(
