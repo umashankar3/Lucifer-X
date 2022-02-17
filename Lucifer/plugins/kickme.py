@@ -1,6 +1,6 @@
-# For @UniBorg
+# For @Umashankar31
 
-# Courtesy @yasirsiddiqui
+# Courtesy @Umashankar31
 
 """
 
