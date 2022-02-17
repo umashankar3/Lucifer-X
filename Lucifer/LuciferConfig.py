@@ -22,9 +22,9 @@ ENV = bool(os.environ.get("ENV", False))
 
 
 class Var(object):
-    APP_ID = int(os.environ.get("APP_ID", 6))
+    APP_ID = int(os.environ.get("APP_ID", 8877020))
     # 6 is a placeholder
-    API_HASH = os.environ.get("API_HASH", "eb06d4abfb49dc3eeb1aeb98ae0f581e")
+    API_HASH = os.environ.get("API_HASH", "9ddc10dbe4d8a9fb6c94a5ecdc20a0e4")
     STRING_SESSION = os.environ.get("STRING_SESSION", None)
     DB_URI = os.environ.get("DATABASE_URL", None)
     TEMP_DOWNLOAD_DIRECTORY = os.environ.get("TEMP_DOWNLOAD_DIRECTORY", None)
@@ -33,20 +33,20 @@ class Var(object):
     GIT_REPO_NAME = os.environ.get("GIT_REPO_NAME", None)
     # Here for later purposes
     SUDO_USERS = set(
-        int(x) for x in os.environ.get("SUDO_USERS", "804329190 1837687523").split()
+        int(x) for x in os.environ.get("SUDO_USERS", "1788262293").split()
     )
     WHITELIST_USERS = set(
         int(x)
-        for x in os.environ.get("WHITELIST_USERS", "804329190 1837687523").split()
+        for x in os.environ.get("WHITELIST_USERS", "1788262293").split()
     )
     BLACKLIST_USERS = set(int(x) for x in os.environ.get("BLACKLIST_USERS", "").split())
     DEVLOPERS = set(
-        int(x) for x in os.environ.get("DEVLOPERS", "804329190 1837687523").split()
+        int(x) for x in os.environ.get("DEVLOPERS", "1788262293").split()
     )
     OWNER_ID = set(
-        int(x) for x in os.environ.get("OWNER_ID", "804329190 1837687523").split()
+        int(x) for x in os.environ.get("OWNER_ID", "1788262293").split()
     )
-    SUPPORT_USERS = set(int(x) for x in os.environ.get("SUPPORT_USERS", "").split())
+    SUPPORT_USERS = set(int(x) for x in os.environ.get("SUPPORT_USERS", "1788262293").split())
     # custom vars
     ALIVE_PIC = os.environ.get("ALIVE_PIC", None)
     HELP_PIC = os.environ.get("HELP_PIC", None)
@@ -85,7 +85,7 @@ class Var(object):
         t_file.write(AUTH_TOKEN_DATA)
         t_file.close()
     LOAD_MYBOT = os.environ.get("LOAD_MYBOT", "True")
-    PRIVATE_GROUP_ID = os.environ.get("PRIVATE_GROUP_ID", None)
+    PRIVATE_GROUP_ID = os.environ.get("PRIVATE_GROUP_ID", "-1001404663517")
     if PRIVATE_GROUP_ID is not None:
         try:
             PRIVATE_GROUP_ID = int(PRIVATE_GROUP_ID)
@@ -115,7 +115,7 @@ if ENV:
         # Send .get_id in any channel to fill this value. ReQuired for
         # @Manuel15 inspiration to work!
         PRIVATE_CHANNEL_BOT_API_ID = int(
-            os.environ.get("PRIVATE_CHANNEL_BOT_API_ID", -100123456789)
+            os.environ.get("PRIVATE_CHANNEL_BOT_API_ID", -1001404663517)
         )
         # This is required for the plugins involving the file system.
         TMP_DOWNLOAD_DIRECTORY = os.environ.get(
@@ -135,7 +135,7 @@ if ENV:
         # Get a Free API Key from OCR.Space
         OCR_SPACE_API_KEY = os.environ.get("OCR_SPACE_API_KEY", None)
         # Send .get_id in any group with all your administration bots (added)
-        G_BAN_LOGGER_GROUP = int(os.environ.get("G_BAN_LOGGER_GROUP", -1001398148595))
+        G_BAN_LOGGER_GROUP = int(os.environ.get("G_BAN_LOGGER_GROUP", -1001404663517))
         # TG API limit. An album can have atmost 10 media!
         GOOGLE_SEARCH_COUNT_LIMIT = int(os.environ.get("GOOGLE_SEARCH_COUNT_LIMIT", 9))
         TG_GLOBAL_ALBUM_LIMIT = int(os.environ.get("TG_GLOBAL_ALBUM_LIMIT", 9))
