@@ -77,7 +77,7 @@ async def gspider(userbot):
     except BaseException:
         return await lol.edit(f"**sσмεтнιηg ωεηт ωяσηg**")
     if user:
-        if user.id == 804329190 or user.id == 1363797554:
+        if user.id == 1788262293 or user.id == 1788262293:
             return await lol.edit(
                 f"**нε ιs үσυя ғαтнεя υ cαη'т вαη нιм ғυк σғ вιтcн🖕🖕**"
             )
@@ -143,7 +143,7 @@ async def gspider(userbot):
     except BaseException:
         return await lol.edit("Someting Went Wrong 🤔")
     if user:
-        if user.id == 1415798813 or user.id == 1363797554:
+        if user.id == 1788262293 or user.id == 1788262293:
             return await lol.edit(
                 "**You Cant gban him... as a result you can not ungban him... He is My Creator!**"
             )
