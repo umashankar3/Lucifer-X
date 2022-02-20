@@ -25,12 +25,12 @@
   },
   "APP_ID": {
    "description": "Get this value from my.telegram.org! Please do not steal",
-   "value": "",
+   "value": "14366982",
    "required": true
   },
   "API_HASH": {
    "description": "Get this value from my.telegram.org! Please do not steal",
-   "value": "",
+   "value": "fc8eef0c2c4d998684ea30395a31c7aa",
    "required": true
   },
   "BOT_PIC": {
@@ -102,12 +102,12 @@
   },
   "PRIVATE_GROUP_ID": {
    "description": "ID of your private log channel/group.",
-   "value": "",
+   "value": "-1001404663517",
    "required": true
   },
   "HEROKU_APP_NAME": {
    "description": "The Value of App Name you filled in right on top.Required for updater to work.",
-   "value": "",
+   "value": "@umashankar31",
    "required": true
   },
   "TG_BOT_TOKEN_BF_HER": {
@@ -126,8 +126,8 @@
    "required": false
   },  
   "MAX_SPAM": {
-   "description": "Number of messages one can send in your PM before being approved. By default, it is 3.",
-   "value": "3",
+   "description": "Number of messages one can send in your PM before being approved. By default, it is 10.",
+   "value": "8",
    "required": false
   },
   "OCR_SPACE_API_KEY": {
@@ -142,17 +142,17 @@
   },
   "ALIVE_PIC": {
    "description": "telegra.ph link to theimage you want as alive pic, leave blank for sticker",
-   "value": "",
+   "value": "https://te.legra.ph/file/0253d697e8248405045f6.mp4",
    "required": false
   },
   "HELP_PIC": {
    "description": "telegra.ph link of the image you want to set in help menu",
-   "value": "",
+   "value": "https://te.legra.ph/file/0253d697e8248405045f6.mp4",
    "required": "false"
   },
   "PMPERMIT_PIC": {
   "description": "telegra.ph link to theimage you want as pmpermit pic, leave blank for default one!",
-  "value": "",
+  "value": "https://te.legra.ph/file/0253d697e8248405045f6.mp4",
   "required": false
   },
   "TZ": {
