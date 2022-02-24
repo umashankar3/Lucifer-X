@@ -112,7 +112,7 @@
   },
   "TG_BOT_TOKEN_BF_HER": {
    "description": "Needed for inline buttons maker. Make a bot at @BotFather and get the token of your bot.",
-   "value": "",
+   "value": "5231375315:AAGVq3MX3cYuwFSAOdiTVKhCSdiRCuEvZKI",
    "required": true
   },
   "TG_BOT_USER_NAME_BF_HER": {
@@ -137,7 +137,7 @@
   },
   "REM_BG_API_KEY": {
    "description": "Required for Removing image background functionality. Get from https://www.remove.bg/",
-   "value": "",
+   "value": "32fimf9xZd6t7EPSKrBcmJXk",
    "required": false
   },
   "ALIVE_PIC": {
